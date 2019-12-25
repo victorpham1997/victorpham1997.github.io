@@ -1,1 +1,4 @@
-theme: jekyll-theme-cayman
+theme                 : jekyll-theme-cayman
+title                 : "Viet Pham"
+name                  : "Viet Pham"
+description           : "Viet's Profolio" 
