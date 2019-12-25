@@ -1,3 +1,0 @@
-## Welcome to Viet's GitHub Pages
-
-Welcome to my page
