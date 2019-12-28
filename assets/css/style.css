@@ -1,3 +1,11 @@
+@media only screen and (min-width: 769px) {
+   .content .table-profile { 
+      font-size: 1vw; 
+   }
+
+}
+
+
 .navbar{
 	background: black;
 }
