@@ -5,6 +5,23 @@
 
 }
 
+.tn_under{
+  position: absolute;
+  transform: translate(4%, -96%);
+  z-index: -1;
+}
+
+.tn_under_under{
+  position: absolute;
+  transform: translate(8%, -92%);
+  z-index: -2;
+}
+
+.art_pad{
+  padding-left: 5em !important;
+  padding-right: 5em !important;
+}
+
 .img{
   opacity: 1;
   display: block;
@@ -33,6 +50,55 @@ a.darken:hover img {
     opacity: 0.3;
             
 }
+
+a.thumbnail {
+  position: relative;
+  display: inline-block;
+  /*background: transparent;*/
+  padding: 0;
+}
+
+
+a.thumbnail:hover img.tn{
+  transform: translate(-2%, -2%);
+  opacity: 0.7;
+  background: black;
+}
+
+a.thumbnail:hover img.tn_under{
+  transform: translate(5%, -95%);
+  opacity: 0.7;
+
+}
+
+a.thumbnail:hover img.tn_under_under{
+  transform: translate(11%, -89%);
+  opacity: 0.7;
+
+}
+
+a.thumbnail:hover p.tn_text-on-top{
+  visibility:visible;
+  font-size: 3em;
+  opacity: 0.9;
+}
+
+.tn_text-on-top{
+  padding: 1em 1em 1em 1em;
+  color: white;
+  background: black;
+  font-size: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility:hidden;
+  transition: font-size 0.3s;
+}
+
 
 .text-on-top{
   color: white;
