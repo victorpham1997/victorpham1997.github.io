@@ -39,12 +39,23 @@
           </span>
           <span>Resume</span>
         </a>
-        <a class="navbar-item" href="#portfolio">
-          <span class="icon">
-            <i class="fas fa-th-list"></i>
-          </span>
-          <span>Portfolio</span>
-        </a>
+        <div class="navbar-item has-dropdown is-hoverable" href="#portfolio">
+          <div class="navbar-dropdown is-boxed ">
+            <a class="navbar-item is-2 is-black tat" href="#acad_proj">
+              Academic Projects
+            </a>
+            <a class="navbar-item is-2 is-black tat" href="#art_proj">
+              Art Projects
+            </a>
+          </div>
+          <div class="navbar-link is-white">
+            <span class="icon ">
+              <i class="fas fa-th-list "></i>
+            </span>
+            <span class="tiss">Projects</span>
+          </div>
+            
+        </div>
         <a class="navbar-item" href="#contact">
           <span class="icon">
             <i class="fas fa-envelope"></i>
@@ -113,9 +124,8 @@
             <br>
             <div class="card-footer">
               <div class="card-footer-item buttons has-addons is-centered">
-                <a href="#" class="button is-link">Github</a>
-                <a href="#" class="button is-link">LinkedIn</a>
-                <a href="#" class="button is-link">Facebook</a>
+                <a href="https://github.com/victorpham1997" class="button is-link">Github</a>
+                <a href="https://www.linkedin.com/in/trung-viet-pham/" class="button is-link">LinkedIn</a>
               </div>
             </div>
           </div>
@@ -280,7 +290,7 @@
 
 
   <!-- Academic Project-->
-  <section class="section" id="portfolio">
+  <section class="section" id="acad_proj">
     <div class="container">
       <div class="section-heading has-text-centered">
         <h3 class="title is-2">Academic Projects</h3>
@@ -291,7 +301,7 @@
         <div class="columns">
           <!-- BLink Android App -->
           <div class="column is-4">
-            <a id="blink_img" class="darken" href="">
+            <a id="blink_img" class="darken acad_proj" href="blink_ap.html">
               <img class="img" src="images/Blink.jpg" alt="Blink picture">
               <p class="text-on-top" id="blink_text">Find out<br>more</p>
             </a>
@@ -300,7 +310,7 @@
               <span class="subtitle is-6"><br>An App to Link<br><br></span>
             </p>
             <!-- ASTAR Proj -->
-            <a id="astar_img" class="darken" href="">
+            <a id="astar_img" class="darken acad_proj" href="">
               <img class="img" src="images/astar.jpg" alt="Urop picture">
               <p class="text-on-top" id="astar_text">Find out<br>more</p>
             </a>
@@ -311,7 +321,7 @@
           </div>
           <!-- Snak3D -->
           <div class="column is-4">
-            <a id="snaked_img" class="darken" href="">
+            <a id="snaked_img" class="darken acad_proj" href="">
               <img class="img" src="images/Snak3D_2.jpg" alt="Snak3D picture">
               <p class="text-on-top" id="snaked_text">Find out<br>more</p>
             </a>
@@ -322,7 +332,7 @@
           </div>
           <!-- UROP Proj -->
           <div class="column is-4">
-            <a id="urop_img" class="darken" href="">
+            <a id="urop_img" class="darken acad_proj" href="">
               <img class="img" src="images/Urop.jpg" alt="Urop picture">
               <p class="text-on-top" id="urop_text">Find out<br>more</p>
             </a>
@@ -336,7 +346,7 @@
     </div>
   </section>
   <!-- Art Projects-->
-  <section class="section" id="portfolio">
+  <section class="section" id="art_proj">
     <div class="container">
       <div class="section-heading has-text-centered">
         <h3 class="title is-2">Art Projects</h3>
@@ -354,8 +364,8 @@
               <p class="tn_text-on-top" id="blink_text">View<br>Gallery</p>
             </a>
             <p class="has-text-centered">
-              <span class="title is-5"><br>BLink Android App</span>
-              <span class="subtitle is-6"><br>An App to Link<br><br></span>
+              <span class="title is-5"><br>Architecture Sketches</span>
+              <span class="subtitle is-6"><br>Studies of well known Contemporary Architectures<br><br></span>
             </p>
           <!-- Human sketches -->
             <a id="as" class="thumbnail" href="">
@@ -365,10 +375,11 @@
               <p class="tn_text-on-top" id="blink_text">View<br>Gallery</p>
             </a>
             <p class="has-text-centered">
-              <span class="title is-5"><br>BLink Android App</span>
-              <span class="subtitle is-6"><br>An App to Link<br><br></span>
+              <span class="title is-5"><br>Human Sketches</span>
+              <span class="subtitle is-6"><br>Sketches of people<br><br></span>
             </p>
           </div>
+          <!-- Field sketches -->
           <div class="column is-half art_pad">
             <a id="as" class="thumbnail" href="">
               <img class="img tn" src="images/artworks/field_sketches/thumbnails/fs_tn01.jpg" alt="as_tn01 picture">
@@ -377,9 +388,10 @@
               <p class="tn_text-on-top" id="blink_text">View<br>Gallery</p>
             </a>
             <p class="has-text-centered">
-              <span class="title is-5"><br>BLink Android App</span>
-              <span class="subtitle is-6"><br>An App to Link<br><br></span>
+              <span class="title is-5"><br>Field Sketches</span>
+              <span class="subtitle is-6"><br>Drawings of sceneries from observation<br><br></span>
             </p>
+          <!-- Other sketches -->
             <a id="as" class="thumbnail" href="">
               <img class="img tn" src="images/artworks/others/thumbnails/ot_tn01.jpg" alt="as_tn01 picture">
               <img class="img tn_under" src="images/artworks/others/thumbnails/ot_tn02.jpg" alt="as_tn01 picture">
@@ -387,8 +399,8 @@
               <p class="tn_text-on-top" id="blink_text">View<br>Gallery</p>
             </a>
             <p class="has-text-centered">
-              <span class="title is-5"><br>BLink Android App</span>
-              <span class="subtitle is-6"><br>An App to Link<br><br></span>
+              <span class="title is-5"><br>Others</span>
+              <span class="subtitle is-6"><br>Older works<br><br></span>
             </p>
           </div>
         </div>

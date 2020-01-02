@@ -7,19 +7,19 @@
 
 .tn_under{
   position: absolute;
-  transform: translate(4%, -96%);
+  transform: translate(2%, -98%);
   z-index: -1;
 }
 
 .tn_under_under{
   position: absolute;
-  transform: translate(8%, -92%);
+  transform: translate(4%, -96%);
   z-index: -2;
 }
 
 .art_pad{
-  padding-left: 5em !important;
-  padding-right: 5em !important;
+  padding-left: 6em !important;
+  padding-right: 6em !important;
 }
 
 .img{
@@ -38,6 +38,8 @@ a.darken {
   display: inline-block;
   background: black;
   padding: 0;
+  transition: .5s ease;
+
 }
 
 a.darken img {
@@ -48,7 +50,14 @@ a.darken img {
 
 a.darken:hover img {
     opacity: 0.3;
-            
+    /*padding: 50px 50px 50px 50px;*/
+    /*transform: scale(0.95,0.95);         */
+}
+
+a.darken:hover {
+    /*opacity: 0.3;*/
+    /*padding: 50px 50px 50px 50px;*/
+    transform: scale(1.05,1.05);         
 }
 
 a.thumbnail {
@@ -80,7 +89,7 @@ a.thumbnail:hover img.tn_under_under{
 a.thumbnail:hover p.tn_text-on-top{
   visibility:visible;
   font-size: 3em;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .tn_text-on-top{
@@ -113,6 +122,17 @@ a.thumbnail:hover p.tn_text-on-top{
   visibility:hidden;
   transition: font-size 0.3s;
 }
+
+a.acad_proj:hover  p.text-on-top {
+  visibility:visible;
+  font-size: 3em;
+}
+
+/*a.acad_proj:hover  img.img {
+  width:110%;
+}*/
+
+/*
 #blink_img:hover #blink_text {
   visibility:visible;
   font-size: 3em;
@@ -129,9 +149,13 @@ a.thumbnail:hover p.tn_text-on-top{
   visibility:visible;
   font-size: 3em;
 }
-
+*/
 .navbar{
 	background: black;
+}
+
+div.navbar-dropdown:hover + div.navbar-link{
+  color: black;
 }
 .navbar-item{
 	color: white;
@@ -144,6 +168,9 @@ a.thumbnail:hover p.tn_text-on-top{
 }
 .is-white{
 	color: white;
+}
+.is-black{
+  color: black; 
 }
 
 .card-equal-height {
