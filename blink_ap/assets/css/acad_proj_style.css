@@ -1,0 +1,15 @@
+.navbar{
+	background: black;
+}
+div.navbar-dropdown:hover + div.navbar-link{
+  color: black;
+}
+.navbar-item{
+	color: white;
+}
+.is-white{
+	color: white;
+}
+.is-black{
+  color: black; 
+}
