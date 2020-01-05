@@ -1,0 +1,117 @@
+.navbar{
+	background: black;
+}
+div.navbar-dropdown:hover + div.navbar-link{
+  color: black;
+}
+.navbar-item{
+	color: white;
+}
+.is-white{
+	color: white;
+}
+
+.is-black{
+	color: black;
+}
+
+
+
+.tabs {
+margin-bottom: -1px !important;
+position: relative;
+}
+.tab-content {
+padding: 60px;
+top: 197px;
+color: #000;
+background-color: white;
+}
+.tab-pane {
+display: none;
+}
+.tab-pane.is-active {
+display: block;
+width: 50%;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+}
+.is-active {
+display: initial;
+}
+
+.cent{
+display: block;
+margin: 10px auto;
+padding: 5px;
+border: 1px solid #ccc}
+
+.video
+{display: block;
+margin: 0 auto;}
+
+/* CSS from http://embedresponsively.com */
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+ul {
+	background: transparent;
+}
+
+section.hero {
+	padding-top: 6em;
+	background-color: white !important;
+}
+
+ul {
+	padding-left: 10em;
+	padding-right: 10em;
+}
+
+li {
+	padding-left: 1em;
+	padding-right: 1em;
+	display: inline;
+}
+
+li.is-active span{
+	color: white ;
+}
+
+li.is-active a{
+	background: black;
+}
+
+.modal-content.ver {
+	width: 35em;
+}
+
+.modal-content.hor {
+	width: 50em;
+}
+
+.image-container {
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	background: white;
+	border-radius: 0.3em;
+}
+
+.tab-content {
+	padding-left: 8rem;
+	padding-right: 8rem;
+}

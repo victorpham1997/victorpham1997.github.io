@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sketches Gallery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.8.x-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/tabs.css">
+  <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+  <script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar is-fixed-top">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="/#home">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+          <span>Home</span>
+        </a>
+        <a class="navbar-item" href="/#about">
+          <span class="icon">
+            <i class="fas fa-info"></i>
+          </span>
+          <span>About Me</span>
+        </a>
+        <a class="navbar-item" href="/#resume">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>Resume</span>
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-dropdown is-boxed ">
+            <a class="navbar-item is-2 is-black tat" href="/#acad_proj">
+              Academic Projects
+            </a>
+            <a class="navbar-item is-2 is-black tat" href="/#art_proj">
+              Art Projects
+            </a>
+          </div>
+          <div class="navbar-link is-white">
+            <span class="icon ">
+              <i class="fas fa-th-list "></i>
+            </span>
+            <span class="tiss">Projects</span>
+          </div>
+            
+        </div>
+        <a class="navbar-item" href="/#contact">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- Main Section -->
+  <section class="hero">
+
+    <div class=" has-text-centered is-centered main-menu" id="nav">
+        <ul class="has-text-centered">
+            <li class="is-active" data-target="pane-1" id="1">
+                <a class="button is-outlined ">
+                    <span class="is-black">Architecture Sketches</span>
+                </a>
+            </li>
+            <li class="" data-target="pane-2" id="2">
+                <a class="button is-outlined ">
+                    <span class="is-black">Field Sketches</span>
+                </a>
+            </li>
+            <li class="" data-target="pane-3" id="3">
+                <a class="button is-outlined ">
+                    <span class="is-black">Human Sketches</span>
+                </a>
+            </li>
+            <li class="" data-target="pane-4" id="4">
+                <a class="button is-outlined ">
+                    <span class="is-black">Others</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content">
+      <!-- Archie Sketch -->
+        <div class="tab-pane" id="pane-1" style="display: block;">
+          <div class="columns">
+            <!-- col 1 -->
+            <div class="column is-3">
+              <a id="show" data-target="#as01" >
+                <img src="../images/artworks/architecture_sketches/thumbnails/as_tn01.jpg">
+              </a>
+              <div id="as01" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content hor ">
+                  <div class="image-container">
+                    <img src="../images/artworks/architecture_sketches/as02.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+              <br><br>
+            <!-- ------------------------>
+              <a id="show" data-target="#as05" >
+                <img src="../images/artworks/architecture_sketches/thumbnails/as_tn05.jpg">
+              </a>
+              <div id="as05" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content ver ">
+                  <div class="image-container">
+                    <img src="../images/artworks/architecture_sketches/as05.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+
+            <!-- col 2 -->
+            <div class="column is-3">
+              <a id="show" data-target="#as02">
+                <img src="../images/artworks/architecture_sketches/thumbnails/as_tn02.jpg">
+              </a>
+              <div id="as02" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content hor ">
+                  <div class="image-container">
+                    <img src="../images/artworks/architecture_sketches/as01.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+            <!-- col 3 -->
+            <div class="column is-3">
+              <a id="show" data-target="#as03" >
+                <img src="../images/artworks/architecture_sketches/thumbnails/as_tn03.jpg">
+              </a>
+              <div id="as03" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content hor ">
+                  <div class="image-container">
+                    <img src="../images/artworks/architecture_sketches/as03.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+            <!-- col 4 -->
+            <div class="column is-3">
+              <a id="show" data-target="#as04" >
+                <img src="../images/artworks/architecture_sketches/thumbnails/as_tn04.jpg">
+              </a>
+              <div id="as04" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content hor ">
+                  <div class="image-container">
+                    <img src="../images/artworks/architecture_sketches/as04.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- field sketch -->
+        <div class="tab-pane" id="pane-2">
+          <div class="columns">
+            <!-- col 1 -->
+            <div class="column is-3">
+              <a id="show" data-target="#fs01">
+                <img src="../images/artworks/field_sketches/thumbnails/fs_tn01.jpg">
+              </a>
+              <div id="fs01" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content ver">
+                  <div class="image-container">
+                    <img src="../images/artworks/field_sketches/fs02.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+              <!-- ---------- -->
+              <a id="show" data-target="#fs05">
+                <img src="../images/artworks/field_sketches/thumbnails/fs_tn05.jpg">
+              </a>
+              <div id="fs05" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content hor">
+                  <div class="image-container">
+                    <img src="../images/artworks/field_sketches/fs05.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+            <!-- col 2 -->
+            <div class="column is-3">
+              <a id="show" data-target="#fs02">
+                <img src="../images/artworks/field_sketches/thumbnails/fs_tn02.jpg">
+              </a>
+              <div id="fs02" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content ver ">
+                  <div class="image-container">
+                    <img src="../images/artworks/field_sketches/fs03.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+              <!-- ----------- -->
+              <a id="show" data-target="#fs06">
+                <img src="../images/artworks/field_sketches/thumbnails/fs_tn06.jpg">
+              </a>
+              <div id="fs06" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content hor">
+                  <div class="image-container">
+                    <img src="../images/artworks/field_sketches/fs06.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+            <!-- col 3-->
+            <div class="column is-3">
+              <a id="show" data-target="#fs03">
+                <img src="../images/artworks/field_sketches/thumbnails/fs_tn03.jpg">
+              </a>
+              <div id="fs03" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content ver ">
+                  <div class="image-container">
+                    <img src="../images/artworks/field_sketches/fs01.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+            <!-- col 4-->
+            <div class="column is-3">
+              <a id="show" data-target="#fs04">
+                <img src="../images/artworks/field_sketches/thumbnails/fs_tn04.jpg">
+              </a>
+              <div id="fs04" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content hor ">
+                  <div class="image-container">
+                    <img src="../images/artworks/field_sketches/fs04.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <!-- Human Sketches -->
+        <div class="tab-pane" id="pane-3">
+          <div class="columns">
+            <!-- col 1 -->
+            <div class="column is-3">
+              <a id="show" data-target="#hs01">
+                <img src="../images/artworks/human_sketches/thumbnails/hs_tn01.jpg">
+              </a>
+              <div id="hs01" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content ver">
+                  <div class="image-container">
+                    <img src="../images/artworks/human_sketches/hs01.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+              <!-- ---------- -->
+              <a id="show" data-target="#hs05">
+                <img src="../images/artworks/human_sketches/thumbnails/hs_tn05.jpg">
+              </a>
+              <div id="hs05" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content ver">
+                  <div class="image-container">
+                    <img src="../images/artworks/human_sketches/hs05.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+            <!-- col 2 -->
+            <div class="column is-3">
+              <a id="show" data-target="#hs02">
+                <img src="../images/artworks/human_sketches/thumbnails/hs_tn02.jpg">
+              </a>
+              <div id="hs02" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content ver ">
+                  <div class="image-container">
+                    <img src="../images/artworks/human_sketches/hs02.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+            <!-- col 3-->
+            <div class="column is-3">
+              <a id="show" data-target="#hs03">
+                <img src="../images/artworks/human_sketches/thumbnails/hs_tn03.jpg">
+              </a>
+              <div id="hs03" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content ver ">
+                  <div class="image-container">
+                    <img src="../images/artworks/human_sketches/hs03.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+            <!-- col 4-->
+            <div class="column is-3">
+              <a id="show" data-target="#hs04">
+                <img src="../images/artworks/human_sketches/thumbnails/hs_tn04.jpg">
+              </a>
+              <div id="hs04" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content hor ">
+                  <div class="image-container">
+                    <img src="../images/artworks/human_sketches/hs04.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+          </div>          
+        </div>
+        <!-- Other Sketches -->
+        <div class="tab-pane" id="pane-4">
+          <div class="columns">
+            <!-- col 1 -->
+            <div class="column is-3">
+              <a id="show" data-target="#ot01">
+                <img src="../images/artworks/others/thumbnails/ot_tn01.jpg">
+              </a>
+              <div id="ot01" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content hor">
+                  <div class="image-container">
+                    <img src="../images/artworks/others/ot01.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+            <!-- col 2 -->
+            <div class="column is-3">
+              <a id="show" data-target="#ot02">
+                <img src="../images/artworks/others/thumbnails/ot_tn02.jpg">
+              </a>
+              <div id="ot02" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content ver ">
+                  <div class="image-container">
+                    <img src="../images/artworks/others/ot02.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+            <!-- col 3-->
+            <div class="column is-3">
+              <a id="show" data-target="#ot03">
+                <img src="../images/artworks/others/thumbnails/ot_tn03.jpg">
+              </a>
+              <div id="ot03" class="modal modal-fx-fadeInScale">
+                <div class="modal-background"></div>
+                <div class="modal-content hor ">
+                  <div class="image-container">
+                    <img src="../images/artworks/others/ot03.jpg">
+                    <p>HELLO</p>
+                    <p>THisis an aaxing owkf of art</p>
+                  </div>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+              </div>
+            </div>
+          </div>          
+        </div>  
+    </div>
+  </section>
+  <script src="../assets/js/bulma.js"></script>
+  <script src="../assets/js/tabs.js"></script>
+  <script src="../assets/js/modal.js"></script>
+
+</body>
+</html>
