@@ -128,28 +128,6 @@ a.acad_proj:hover  p.text-on-top {
   font-size: 3em;
 }
 
-/*a.acad_proj:hover  img.img {
-  width:110%;
-}*/
-
-/*
-#blink_img:hover #blink_text {
-  visibility:visible;
-  font-size: 3em;
-}
-#snaked_img:hover #snaked_text {
-  visibility:visible;
-  font-size: 3em;
-}
-#urop_img:hover #urop_text {
-  visibility:visible;
-  font-size: 3em;
-}
-#astar_img:hover #astar_text {
-  visibility:visible;
-  font-size: 3em;
-}
-*/
 .navbar{
 	background: black;
 }
@@ -182,11 +160,8 @@ div.navbar-dropdown:hover + div.navbar-link{
   margin-top: auto;
   border: none;
 }
-/*.title {
-	color: white;
-}
-.subtitle {
-	color: white;
-}
 
-
+.footer {
+  background: black;
+  padding-bottom: 4em;
+}

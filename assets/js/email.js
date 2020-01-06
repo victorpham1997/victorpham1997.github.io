@@ -27,7 +27,7 @@ function sendEmail() {
 	    Body : 	"Sender name: " + name + "<br>"
 	    	+	"Sender email: " + email +"<br>"
 	    	+	"Subject: " + subject +"<br>"
-	    	+	"message: " + message
+	    	+	"Message: " + message
 	}).then(
 	  message => alert("Thank you for contacting me! I will reply you shortly. :)")
 	);
