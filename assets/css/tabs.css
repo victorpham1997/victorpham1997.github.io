@@ -101,9 +101,14 @@ li.is-active a{
 	width: 60vh;
 }
 
+.modal-content.ver2 {
+	width: 53vh;
+}
+
 .modal-content.hor {
 	width: 80vh;
 }
+
 
 .image-container {
 	padding: 0.5em 0.5em 0.5em 0.5em;
