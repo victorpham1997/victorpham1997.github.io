@@ -21,7 +21,7 @@ function sendEmail() {
 	    To : 'victorpham1997@gmail.com',
 	    From : "victorpham1997@gmail.com",
 	    Subject : "New message from " + name +" @" + email,
-	    Body : 	"Sender name: " + name +"|"
+	    Body : 	"Sender name: " + name <br>
 	    	+	"Sender email: " + email +"|"
 	    	+	"Subject: " + subject +"|"
 	    	+	"message: " + message
