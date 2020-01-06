@@ -98,11 +98,11 @@ li.is-active a{
 }
 
 .modal-content.ver {
-	width: 30em;
+	width: 60vh;
 }
 
 .modal-content.hor {
-	width: 45em;
+	width: 80vh;
 }
 
 .image-container {
