@@ -4,8 +4,13 @@
    }
 }
 
+.hero-body div.container{
+  padding-left: 3em;
+}
+
 img.header{
   height: 95vh;
+  max-width: 400%;
   position: absolute;
   left: 60%;
   bottom: 0;
