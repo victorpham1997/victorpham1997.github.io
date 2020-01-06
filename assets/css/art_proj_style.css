@@ -14,6 +14,10 @@ div.navbar-dropdown:hover + div.navbar-link{
 .is-black{
 	color: black;
 }
+.subtext {
+	color: rgb(43,43,43);
+	font-size: 1em;
+}
 
 
 
