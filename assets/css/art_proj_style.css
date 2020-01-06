@@ -120,3 +120,12 @@ li.is-active a{
 	padding-left: 8rem;
 	padding-right: 8rem;
 }
+
+a img{
+  transition: .3s ease;
+}
+
+a img:hover {
+	opacity: 0.8;
+	transform: scale(1.05,1.05);
+}

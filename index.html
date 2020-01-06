@@ -12,7 +12,9 @@
   <!-- Bulma Version 0.8.x-->
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script async type="text/javascript" src="../js/bulma.js"></script>
+  <script async type="text/javascript" src="assets/js/bulma.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script async type="text/javascript" src="assets/js/email.js"></script>
 </head>
 
 <body>
@@ -456,18 +458,18 @@
 
       <div class="columns">
         <div class="column is-6 is-offset-3">
-          <div class="box">
+          <div class="box" action="#" id="form" method="post" name="form">
             <div class="field">
               <label class="label">Name</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input id="user_name" value="" class="input" type="text" placeholder="Your name">
               </div>
             </div>
 
             <div class="field">
               <label class="label">Email</label>
               <div class="control has-icons-left">
-                <input class="input" type="email" placeholder="Email input" value="">
+                <input id="user_email" class="input" type="email" placeholder="Your email" value="">
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -475,19 +477,26 @@
             </div>
 
             <div class="field">
+              <label class="label">Subject</label>
+              <div class="control">
+                <input id="email_subject" value="" class="input" type="text" placeholder="Subject">
+              </div>
+            </div>
+
+            <div class="field">
               <label class="label">Message</label>
               <div class="control">
-                <textarea class="textarea" placeholder="Textarea"></textarea>
+                <textarea id="email_message" class="textarea"  placeholder="Message"></textarea>
               </div>
             </div>
 
             <div class="field is-grouped has-text-centered">
-              <div class="control">
-                <button class="button is-link is-large"><span class="icon">
+              <form class="control" method="post" >
+                <button  type="button" onclick="sendEmail()" class="button is-link is-large"><span class="icon">
                     <i class="fas fa-envelope"></i>
                   </span>
                   <span>Submit</span></button>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -507,5 +516,7 @@
     </div>
   </footer>
 </body>
+
+
 
 </html>

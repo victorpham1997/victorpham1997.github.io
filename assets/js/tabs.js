@@ -26,12 +26,4 @@ function toggleTab(selectedNav, targetId) {
   });
 }
 
-// $('div.modal').click(function(){
-//        if(!$(this).hasClass("active")){
-//                  $(".active").removeClass("active");
-//                  $(this).addClass("active");
-//         }else{
-//             return false;//this prevents flicker
-//        }
-//  });
 
