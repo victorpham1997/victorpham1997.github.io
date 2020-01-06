@@ -2,11 +2,15 @@
    .content .table-profile { 
       font-size: 1vw; 
    }
+   div.header{
+    left:45%;
+   }
 }
 @media only screen and (max-width: 1023px) {
    .navbar-item , .navbar-link{
     color: black !important;
    }
+
    .navbar-link:not(.is-arrowless)::after {
     border-top: 3px solid;
     border-right: 3px solid;
@@ -34,6 +38,30 @@ div.header{
 div.header img{
   height: 100%;
   max-width: 1000%;
+}
+
+section#about {
+  /*background-image: linear-gradient(rgba(90,156,154,0), rgba(90,156,154,1))*/
+}
+
+section#resume {
+  /*background-image: linear-gradient(rgba(90,156,154,0), rgba(90,156,154,1))*/
+  /*background: rgb(176,196,226);*/
+}
+
+section#acad_proj {
+  /*background-image: linear-gradient(rgba(90,156,154,0), rgba(180,237,230,1))*/
+
+  /*background:  rgba(90,156,154,1)*/
+
+}
+section#art_proj {
+  /*background-image: linear-gradient(rgb(180,237,230), rgb(90,156,154))*/
+}
+section#contact {
+  /*background-image: linear-gradient(rgb(33,83,84), rgb(11,44,51))*/
+  /*background: rgb(176,196,226);*/
+
 }
 
 .tn_under{
@@ -194,6 +222,6 @@ section.hero {
 }
 
 .footer {
-  background: black;
+  background: rgb(11,44,51);
   padding-bottom: 4em;
 }
