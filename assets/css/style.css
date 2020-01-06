@@ -4,16 +4,25 @@
    }
 }
 
+
+
 .hero-body div.container{
   padding-left: 3em;
 }
-
-img.header{
+.hero-body {
+  overflow-x: hidden !important;
+}
+div.header{
+  overflow: hidden !important;
   height: 95vh;
-  max-width: 400%;
   position: absolute;
   left: 60%;
   bottom: 0;
+}
+
+div.header img{
+  height: 100%;
+  max-width: 400%;
 }
 
 .tn_under{
