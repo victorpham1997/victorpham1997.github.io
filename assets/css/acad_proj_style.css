@@ -9,6 +9,26 @@
     border-left: 0;
     border-bottom: 0;
    }
+
+   p.header-size {
+   	font-size: 3rem !important;
+   }
+
+   p.subtitle.is-4 {
+   	font-size: 1rem;
+   }
+
+   p.subtitle.is-3 {
+   	font-size: 1.15rem;
+   }
+
+   .disable-on-mobile {
+   	display: none;
+   }
+
+   .is-offset-10 {
+   	margin-left: 60% !important;
+   }
 }
 
 .navbar{
