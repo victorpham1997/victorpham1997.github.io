@@ -18,9 +18,6 @@ function sendEmail() {
 	}
 	Email.send({
 		SecureToken : "abae7717-9f5f-4399-9ad5-8d959de2b0c1",
-		// Host : "smtp.elasticemail.com",
-		// Username : "victorpham1997@gmail.com",
-		// Password : "657DD13E707E2A936AC6539023F408E21BC7",
 	    To : 'victorpham1997@gmail.com',
 	    From : "victorpham1997@gmail.com",
 	    Subject : "New message from " + name +" @" + email,
