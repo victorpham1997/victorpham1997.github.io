@@ -31,6 +31,10 @@
    }
 }
 
+div.column video {
+	width:75%;
+}
+
 .navbar{
 	background: black;
 }
