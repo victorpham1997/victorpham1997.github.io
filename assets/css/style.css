@@ -1,9 +1,9 @@
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 769px) {
    .content .table-profile { 
       font-size: 1vw; 
    }
    div.header{
-    left:45%;
+    left:45% !important;
    }
 }
 @media only screen and (max-width: 1023px) {
