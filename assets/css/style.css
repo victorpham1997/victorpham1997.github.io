@@ -19,11 +19,17 @@
    }
 }
 
-/*section#about .container.columns{
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}*/
+div.skill-card .button {
+  margin: 0.2em 0.2em 0.2em 0.2em ;
+  border-radius: 0.7em;
+  font-size: 1.2em; 
+}
 
+section#about a.icon {
+  padding-right: 1em;
+  padding-left: 1em;
+
+}
 
 .hero-body div.container{
   padding-left: 3em;
