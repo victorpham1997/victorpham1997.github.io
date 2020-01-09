@@ -9,6 +9,15 @@
     border-left: 0;
     border-bottom: 0;
    }
+
+   .tab-content {
+   	padding-left: 2rem !important;
+   	padding-right: 2rem !important;
+   }
+}
+
+@media only screen and (max-width: 769px) {
+   
 }
 
 .navbar{
@@ -95,15 +104,16 @@ section.hero {
 	background-color: white !important;
 }
 
-ul {
-	padding-left: 10em;
-	padding-right: 10em;
-}
+
 
 li {
 	padding-left: 1em;
 	padding-right: 1em;
 	display: inline;
+}
+
+li a {
+	margin: 0.1em ;
 }
 
 li.is-active span{
