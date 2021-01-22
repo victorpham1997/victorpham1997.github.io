@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jazz Generation Project</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.8.x-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/acad_proj_style.css">
+  <script async type="text/javascript" src="../assets/js/bulma.js"></script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar is-fixed-top">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span class="is-white"></span>
+        <span class="is-white"></span>
+        <span class="is-white"></span>
+      </div>
+    </div>
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="/#home">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+          <span>Home</span>
+        </a>
+        <a class="navbar-item" href="/#about">
+          <span class="icon">
+            <i class="fas fa-info"></i>
+          </span>
+          <span>About Me</span>
+        </a>
+        <a class="navbar-item" href="/#resume">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>Resume</span>
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-dropdown is-boxed ">
+            <a class="navbar-item is-2 is-black tat" href="/#acad_proj">
+              Academic Projects
+            </a>
+            <a class="navbar-item is-2 is-black tat" href="/#art_proj">
+              Art Projects
+            </a>
+          </div>
+          <div class="navbar-link is-white">
+            <span class="icon ">
+              <i class="fas fa-th-list "></i>
+            </span>
+            <span class="tiss">Projects</span>
+          </div>
+            
+        </div>
+        <a class="navbar-item" href="/#contact">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- Header -->
+<!--   <section class="hero">
+    <div class="hero-body">
+      <div class="backgn-container">
+        <img class="backgn-img"  src="../images/acad_proj/snak3d/test.jpg">
+      </div>
+      <div class="columns is-centered">
+        
+        <img  src="../images/Blink.jpg" class="column is-5 main-img">
+        
+      </div>
+    </div>
+  </section> -->
+  <!-- Main Section -->
+
+  <section class="section">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <p class="title header-size">Jazz <br>Generation <br>Project</p>
+        <p class="subtitle is-3">Generating endless Jazz music using GPT model</p>
+
+        <i class="fab fa-github"> </i> <a href="https://github.com/victorpham1997/music-generator-app">GitHub Source Code</a>
+        &nbsp;&nbsp;&nbsp;
+        <i class="fab fa-medium-m"></i> <a href="https://towardsdatascience.com/jazz-music-generation-using-gpt-a7ed52b0f468">Medium Article</a>
+        &nbsp;&nbsp;&nbsp;
+        <i class="fab fa-react"></i> <a href="https://musicgenerationwebapp.df.r.appspot.com/">React web App</a><br>
+        <br>
+        <p class="subtitle is-4 is-size-5">
+          <strong class="subtitle is-3">About the Project:</strong>
+          <br>
+          The project explored the use of State-of-the-art Natural Language Processing (NLP) model Generative Pretrain Transformer (GPT) for a music prediction task. As the structure between musical notes in a song and text in a paragraph are fairly similar, we were able to adapt a simple GPT network to create a deep learning model to carry out sequence to sequence prediction task for Jazz. 
+        </p>  
+        <div class="column is-6 is-offset-3 has-text-centered">
+          <img src="../images/acad_proj/mugen/network_structure.png">
+          <br>
+          Model structure
+        </div>
+
+        <p class="subtitle is-4 is-size-5">
+          Our model consists of 3 GPT blocks. It was trained on a relatively small Jazz midi dataset of 200 songs taken from <a href="https://bushgrafts.com/midi/">Doug McKenzie Jazz Piano</a> The following are a few inference samples from our best performing models (the first 5 or 10 seconds are the seed): 
+        </p>
+          
+        <div class="is-size-6 has-text-centered">
+          <iframe class="column is-6 is-offset-3" height="200vw" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/960252736&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          10 Second seed
+          <iframe class="column is-6 is-offset-3" height="200vw" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/957543580&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          5 Second seed
+          <iframe class="column is-6 is-offset-3" height="200vw" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/957548842&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+          5 Second seed
+        </div>
+        <p class="subtitle is-4 is-size-5">
+          <br><br>
+          As a demo, we also built and deploy a web app that generate endless Jazz music from user's input. The app was deployed using Google Cloud App Engine where we hosts both our React WebApp and Python Flask inference server. The demo can be found here: <a href="https://musicgenerationwebapp.df.r.appspot.com/"> Jazz Generation Web App</a>
+          <br><br>
+          This project was done for the <strong>50.038 Computational Data Science</strong> course in a group of 4. For a more indepth look into the project, check out my <strong>Medium</strong> article here: <a href="https://towardsdatascience.com/jazz-music-generation-using-gpt-a7ed52b0f468"> Jazz music generation using GPT </a>
+        </p>
+        
+        <div class="column is-12 has-text-centered" >
+        <video controls>
+          <source src="../images/acad_proj/mugen/mugen_demo.mp4" type="">
+            Your browser does not support HTML5 video.
+        </video>
+        <p>Jazz Generation Web App demo</p>
+      </div>
+        
+      </div>
+
+    </div>
+    <div class="columns is-mobile">
+      <div class="column is-3">
+        <!-- <button class="button is-success">Previous Project</button> -->
+      </div>
+      <div class="column is-3 is-offset-6" align="right">
+        <a href="/blink_ap" class="button is-success">Next Project</a>
+      </div>
+      
+    </div>
+  </section>
+
+
+</body>
