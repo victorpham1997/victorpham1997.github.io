@@ -120,7 +120,7 @@
         </div>
         <div class=" column is-4 has-text-left" style="padding: 2rem 2rem 2rem 2rem; ">
           <p class="subtitle">
-            I am a Computer Science Graduate From Singapore University of Technology and Design (SUTD). Currently working as Data Analyst @ Prudential Service Singapore.
+            I am currently working as a Senior Data Engineer at Prudential Service Singapore. I graduated from Singapore University of Technology and Design (SUTD) in 2021 with a Bachelor in Computer Science.
             <br><br>
             When I was young, I used to dream of becoming an architect. This motivated me to pick up art and drawing to pursue this dream. However, something happened during my Secondary year that changed my life: I learned to write my first line of code! Since then, my love for programming grew stronger and stronger until I joined SUTD and decided to take on a CS major. Now, my main interest is machine learning and algorithm especially in the domain of computer vision and natural language processing.
             <br><br>
@@ -440,24 +440,24 @@
     <div class="container">
       <div class="section-heading has-text-centered">
         <h3 class="title is-2">Contact</h3>
-        <h4 class="subtitle is-5">Get in touch</h4>
+        <h4 class="subtitle is-5">Get in touch through Formspree</h4>
       </div>
       <br>
 
       <div class="columns">
         <div class="column is-6 is-offset-3">
-          <div class="box" action="#" id="form" method="post" name="form">
+          <form method="POST" action="https://formspree.io/f/xbjewply" class="box" action="#" id="form" method="post" name="form" target="_blank">
             <div class="field">
-              <label class="label">Name</label>
+              <label class="label" for="full-name">Full Name</label>
               <div class="control">
-                <input id="user_name" value="" class="input" type="text" placeholder="Your name">
+                <input id="full-name"  value="" class="input" type="text" name="name" placeholder="Your Full Name" required="">
               </div>
             </div>
 
             <div class="field">
-              <label class="label">Email</label>
+              <label class="label" for="email-address">Email</label>
               <div class="control has-icons-left">
-                <input id="user_email" class="input" type="email" placeholder="Your email" value="">
+                <input name="_replyto" id="email-address" class="input" type="email" placeholder="Your email" value="" required="">
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
@@ -465,28 +465,21 @@
             </div>
 
             <div class="field">
-              <label class="label">Subject</label>
+              <label class="label" for="message">Message</label>
               <div class="control">
-                <input id="email_subject" value="" class="input" type="text" placeholder="Subject">
+                <textarea  name="message" id="message" class="textarea"  placeholder="Message"  required=""></textarea>
               </div>
             </div>
 
-            <div class="field">
-              <label class="label">Message</label>
-              <div class="control">
-                <textarea id="email_message" class="textarea"  placeholder="Message"></textarea>
-              </div>
-            </div>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
 
             <div class="field is-grouped has-text-centered">
-              <form class="control" method="post" >
-                <button  type="button" onclick="sendEmail()" class="button is-link is-large"><span class="icon">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <span>Submit</span></button>
-              </form>
+              <button  type="submit"class="button is-link is-large" ><span class="icon">
+                  <i class="fas fa-envelope"></i>
+                </span>
+                <span>Submit</span></button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
 
