@@ -39,7 +39,7 @@ section#about a.icon {
 }
 div.header{
   overflow: hidden !important;
-  height: 95vh;
+  height: 96vh;
   position: absolute;
   left: 52%;
   bottom: 0;
@@ -47,7 +47,8 @@ div.header{
 
 div.header img{
   height: 100%;
-  max-width: 1000%;
+  max-width: 1000000%;
+
 }
 
 section#about {
