@@ -1,10 +1,21 @@
-@media only screen and (max-width: 769px) {
+@media only screen and (orientation:portrait) {
    .content .table-profile { 
       font-size: 1vw; 
    }
    div.header{
-    left:45% !important;
+    left:0% !important;
    }
+   div.banner .container{
+    text-align: right;
+    text-shadow: 3px 3px #1f878a;
+   }
+   .not-mobile{
+    visibility: hidden;
+   }
+/*   div.banner .is-white{
+    color: black !important;
+   }*/
+
 }
 @media only screen and (max-width: 1023px) {
    .navbar-item , .navbar-link{
