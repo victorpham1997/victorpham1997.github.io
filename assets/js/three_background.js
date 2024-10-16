@@ -26,7 +26,7 @@ if (darkTheme==null){
 }
 
 //asign version
-const version = 'v2.0.5'
+const version = 'v2.0.6'
 var versionText = document.querySelector('.version');
 versionText.textContent  = version;
 
@@ -63,7 +63,6 @@ let point = {
     rate: 0.0,
 };
 let theme;
-
 
 // ascii properties
 const rbgThreshold = 255;
@@ -469,9 +468,9 @@ function animate(timeStep) {
     
     // stats.update();
     if (timeStep > i*500){
-        r0 = randomRGB(0.5, r0);
-        g0 = randomRGB(0.5, g0);
-        b0 = randomRGB(0.5, b0);
+        r0 = randomRGB(0.1, r0);
+        g0 = randomRGB(0.1, g0);
+        b0 = randomRGB(0.1, b0);
         effect.domElement.style.color = `rgb(${r0}, ${g0}, ${b0})`;
         // console.log(`rgb(${r0}, ${g0}, ${b0})`)
         i++;
