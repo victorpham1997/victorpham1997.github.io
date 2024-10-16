@@ -748,9 +748,8 @@ hr {
 
 }
 
-.modal {
-  z-index: 3;
-}
+/* .modal {
+} */
 
 .image-container img {
   max-width: 90%;
@@ -760,6 +759,10 @@ hr {
 .modal {
   height: 100%;
   width: 100%;
+  z-index: 3;
+  visibility: visible;
+  /* display: flex; */
+
 }
 
 .modal-content {
@@ -786,231 +789,8 @@ a#show:hover img {
   top: -10px;
 }
 
-
-
-
-
-
-
-
-/* ----------------------------------------------------- */
-
-
-
-div.skill-card .button {
-  margin: 0.2em 0.2em 0.2em 0.2em ;
-  border-radius: 0.7em;
-  font-size: 1.2em; 
-}
-
-section#about a.icon {
-  padding-right: 1em;
-  padding-left: 1em;
-
-}
-
-.hero-body div.container{
-  padding-left: 3em;
-}
-.hero-body {
-  overflow-x: hidden !important;
-}
-div.header{
-  overflow: hidden !important;
-  height: 96vh;
-  position: absolute;
-  left: 52%;
-  bottom: 0;
-}
-
-div.header img{
-  height: 100%;
-  max-width: 1000000%;
-
-}
-
-section#about {
-  /*background-image: linear-gradient(rgba(90,156,154,0), rgba(90,156,154,1))*/
-}
-
-section#resume {
-  /*background-image: linear-gradient(rgba(90,156,154,0), rgba(90,156,154,1))*/
-  /*background: rgb(176,196,226);*/
-}
-
-section#acad_proj {
-  /*background-image: linear-gradient(rgba(90,156,154,0), rgba(180,237,230,1))*/
-
-  /*background:  rgba(90,156,154,1)*/
-
-}
-section#art_proj {
-  /*background-image: linear-gradient(rgb(180,237,230), rgb(90,156,154))*/
-}
-section#contact {
-  /*background-image: linear-gradient(rgb(33,83,84), rgb(11,44,51))*/
-  /*background: rgb(176,196,226);*/
-
-}
-
-.tn_under{
-  position: absolute;
-  transform: translate(2%, -98%);
-  z-index: -1;
-}
-
-.tn_under_under{
-  position: absolute;
-  transform: translate(4%, -96%);
-  z-index: -2;
-}
-
-.art_pad{
-  padding-left: 6em !important;
-  padding-right: 6em !important;
-}
-
-.img{
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+.no-display {
+  visibility: hidden ;
 }
 
 
-a.darken {
-  position: relative;
-  display: inline-block;
-  background: black;
-  padding: 0;
-  transition: .5s ease;
-
-}
-
-a.darken img {
-    display: block;
-    transition: all 0.25s linear;
-
-}
-
-a.darken:hover img {
-    opacity: 0.3;
-    /*padding: 50px 50px 50px 50px;*/
-    /*transform: scale(0.95,0.95);         */
-}
-
-a.darken:hover {
-    /*opacity: 0.3;*/
-    /*padding: 50px 50px 50px 50px;*/
-    transform: scale(1.05,1.05);         
-}
-
-a.thumbnail {
-  position: relative;
-  display: inline-block;
-  /*background: transparent;*/
-  padding: 0;
-}
-
-
-a.thumbnail:hover img.tn{
-  transform: translate(-2%, -2%);
-  opacity: 0.7;
-  background: black;
-}
-
-a.thumbnail:hover img.tn_under{
-  transform: translate(5%, -95%);
-  opacity: 0.7;
-
-}
-
-a.thumbnail:hover img.tn_under_under{
-  transform: translate(11%, -89%);
-  opacity: 0.7;
-
-}
-
-a.thumbnail:hover p.tn_text-on-top{
-  visibility:visible;
-  font-size: 3em;
-  opacity: 0.95;
-}
-
-.tn_text-on-top{
-  padding: 1em 1em 1em 1em;
-  color: white;
-  background: black;
-  font-size: 0px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  visibility:hidden;
-  transition: font-size 0.3s;
-}
-
-
-.text-on-top{
-  color: white;
-  font-size: 0px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  visibility:hidden;
-  transition: font-size 0.3s;
-}
-
-a.acad_proj:hover  p.text-on-top {
-  /* visibility:visible;
-  font-size: 3em; */
-}
-
-.navbar{
-	background: black;
-}
-
-div.navbar-dropdown:hover + div.navbar-link{
-  color: black;
-}
-.navbar-item{
-	color: white;
-}
-section.hero {
-  /*background-image: url(../../images/astar.jpg);*/
-  background: rgb(16,57,121); /* Royal Blue */
-  font-family: 'Poppins', sans-serif;
-  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  color: white;
-}
-.is-white{
-	color: white;
-}
-.is-black{
-  color: black; 
-}
-
-.card-equal-height {
-   display: flex;
-   flex-direction: column;
-   height: 100%;
-}
-.card-equal-height .card-footer {
-  margin-top: auto;
-  border: none;
-}
-
-.footer {
-  background: rgb(11,44,51);
-  padding-bottom: 4em;
-}
