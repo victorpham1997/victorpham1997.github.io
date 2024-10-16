@@ -81,7 +81,11 @@ strong {
   }
   .menu_text{
     font-size: 1.5rem !important;
+  }
 
+  .content-box#projects-content {
+    max-height: 65% !important;
+    backdrop-filter: var(--blur);
   }
 /*   div.banner .is-white{
   color: black !important;
@@ -107,6 +111,8 @@ strong {
     --theme-ctrl-box-size: 10px;
     --title-font-weight: 400;
    }
+
+
 
 }
 
@@ -332,8 +338,7 @@ div.nav_box {
 }
 
 .content-box{
-  /* font-size: min(1.25vw,25px) ; */
-  font-size: min(max(15px, 1.25vw) ,25px) ;
+  /* font-size: min(max(15px, 1.25vw) ,25px) ; */
   margin-left: 5%;
   flex-direction:column;
   justify-content:space-between;
@@ -471,33 +476,16 @@ div.nav_box {
 
 
 .projects-box{
-  width: 100%;
-  display: block;
-  backdrop-filter: blur(2px);
+  /* width: fit-content; */
+  display: inline-block;
+  /* backdrop-filter: blur(2px); */
   margin: 0;
   padding: auto;
   font-size: min(max(13px, 1.25vw) ,25px);
   bottom: 0;
 
-
-
 }
 
-.projects-render-box{
-  width: auto;
-  /* height: fit-content; */
-  display: inline-block;
-  right: 0;
-  bottom: 0;
-  /* backdrop-filter: blur(2px); */
-  background-color: var(--background-color);
-  margin: 0;
-  padding: auto;
-
-}
-#projects-renderer  div table{
-  color: var(--font-color) !important;
-}
 
 .word-break {
   word-break: break-all;
@@ -507,8 +495,8 @@ div.nav_box {
   margin-left: 1%;
   margin-bottom: 0;
   padding: 0% 4% ;
-  max-height: 65%;
-  max-width: 95%;
+  max-height: 95%;
+  max-width: fit-content;
   overflow: auto;
   z-index: -99;
 }
@@ -526,8 +514,17 @@ div.nav_box {
 }
 
 .project-title {
-  font-weight: 550;
-  color: var(--project-title-color);
+  font-family: "Raleway", sans-serif;
+  font-size: max(30px, 4vw);
+  font-weight: 100;
+  /* color: var(--project-title-color); */
+}
+
+.project-subtitle {
+  font-family: "Raleway", sans-serif;
+  font-size: max(10px, 1.5vw);
+  font-weight: 500;
+  /* color: var(--project-title-color); */
 }
 
 @keyframes blinker {
