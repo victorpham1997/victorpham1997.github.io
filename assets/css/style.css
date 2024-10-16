@@ -350,6 +350,7 @@ div.nav_box {
 .about-box {
   width: min(calc(-20vw + 1000px), 33.3%);
   backdrop-filter: blur(2px) !important;
+  margin-bottom: 2rem;
 }
 
 
@@ -364,7 +365,6 @@ div.nav_box {
 
 .about-text {
   float: left;
-  bottom: 0;
   text-align:justify;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
