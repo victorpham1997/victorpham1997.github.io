@@ -25,6 +25,13 @@ if (darkTheme==null){
     darkTheme = darkTheme === 'true';
 }
 
+//asign version
+const version = 'v2.0.3'
+var versionText = document.querySelector('.version');
+versionText.textContent  = version;
+
+
+
 
 
 
@@ -32,7 +39,6 @@ if (darkTheme==null){
 var root = document.querySelector(':root');
 var style = getComputedStyle(root);
 var content  = document.getElementById('projects-content');
-var overflowIndicator = document.querySelector('.overflow-indicator');
 let btnCount = 5;
 
 // screen properties

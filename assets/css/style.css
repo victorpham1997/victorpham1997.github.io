@@ -256,6 +256,12 @@ div.menu_box {
 
 }
 
+.version {
+  opacity: 0.5;
+  display: inline-block;
+
+}
+
 .fa-copyright {
   font-weight: 200 !important;
   font-size: 0.75em;

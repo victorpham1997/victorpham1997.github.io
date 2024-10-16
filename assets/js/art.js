@@ -1,4 +1,5 @@
-var tabSwitchAnimationDuration = 0.25;
+var fadeoutDuration = 0.25;
+var fadeinDuration = 0.25;
 // Modal
 document.querySelectorAll('#show').forEach(function(el) {
   el.addEventListener('click', function() {
@@ -17,6 +18,7 @@ document.querySelectorAll('#show').forEach(function(el) {
 });
 
 // Tab
+
 const colNum = 3;
 var imageArr = [...document.querySelectorAll("#show")];
 
@@ -25,8 +27,12 @@ document.querySelectorAll(".art-subtitle").forEach(function(navEl) {
   navEl.onclick = function() { toggleTab(this.id, this.dataset.target); }
 });
 
-function applyImageTabFilter(id){
-  gsap.to('#show', {duration: tabSwitchAnimationDuration, opacity:0});
+function applyImageTabFilter(id, onLoad = false){
+  if(onLoad){
+    fadeoutDuration = 0;
+    fadeinDuration = 1;
+  }
+  gsap.to('#show', {duration: fadeoutDuration, opacity:0});
   console.log(id);
   var filteredArr = imageArr.filter(el => el.dataset.target.includes(id));
   for (let i = 0; i < filteredArr.length; i++){
@@ -48,11 +54,11 @@ function applyImageTabFilter(id){
     }
     columnEl.appendChild(filteredArr[i])
   }
-  gsap.to('#show', {duration: tabSwitchAnimationDuration, opacity:1, delay:tabSwitchAnimationDuration});
+  gsap.to('#show', {duration: fadeinDuration, opacity:1, delay:fadeoutDuration});
 
 }
 
-applyImageTabFilter('')
+applyImageTabFilter('', true)
 
 
 function toggleTab(selectedNav, targetId) {
@@ -70,29 +76,7 @@ function toggleTab(selectedNav, targetId) {
     }
   });
 
-
-  // var tabs = document.querySelectorAll(".tab-pane");
-
-  // tabs.forEach(function(tab) {
-  //   if (tab.id == targetId) {
-  //     tab.style.display = "block";
-  //   } else {
-  //     tab.style.display = "none";
-  //   }
-  // });
 }
-
-// var imageArr = [...document.querySelectorAll("#show")];
-// var id = "as"
-
-// imageArr.forEach(function(el) {
-//   var id = "as"
-//   var a = imageArr.filter(el => el.dataset.target.includes(id));
-//   console.log(a);
-// });
-
-
-// console.log(imageArr.filter(el => el.dataset.target.includes(id)))
 
 
 
