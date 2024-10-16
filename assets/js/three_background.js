@@ -406,10 +406,6 @@ function toggleTab(selectedTab) {
                 gsap.to(`#${tab.id}`, {duration: 0.25, text: tab.textContent.split(' ')[0]});
                 gsap.to(`#${tab.id}-content`, {duration: tabSwitchAnimationDuration, display: 'none', opacity: 0});
 
-            }
-            else{
-                document.querySelector(`#${tab.id}-content`).style.display = 'none';
-                document.querySelector(`#${tab.id}-content`).style.opacity = 0;
             };
         }
     });
