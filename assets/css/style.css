@@ -751,7 +751,8 @@ hr {
   margin-bottom: 2em;
   display: inline-block;
   font-family: "Ubuntu", sans-serif;
-
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 /* .modal {
