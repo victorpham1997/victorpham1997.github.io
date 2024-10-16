@@ -1,171 +1,140 @@
 <!DOCTYPE html>
-<!-- Snak3D Page -->
 <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Viet Pham</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <!-- Bulma Version 0.8.x-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">        
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+        <script async type="text/javascript" src="../assets/js/email.js"></script>
+        <!-- <script async type="text/javascript" src="assets/js/main.js"></script> -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Snak3D</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <!-- Bulma Version 0.8.x-->
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-  <link rel="stylesheet" type="text/css" href="../assets/css/acad_proj_style.css">
-  <script async type="text/javascript" src="../assets/js/bulma.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBQLD161PL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Google tag (gtag.js) -->
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBQLD161PL"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-    gtag('config', 'G-ZBQLD161PL');
-  </script>
-</head>
+                gtag('config', 'G-ZBQLD161PL'); -->
+                <!-- Load three.js -->
 
-<body>
-  <!-- Navigation bar -->
-  <nav class="navbar is-fixed-top">
-    <div class="navbar-brand">
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-        <span class="is-white"></span>
-        <span class="is-white"></span>
-        <span class="is-white"></span>
-      </div>
-    </div>
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
-      <div class="navbar-end">
-        <a class="navbar-item" href="/#home">
-          <span class="icon">
-            <i class="fas fa-home"></i>
-          </span>
-          <span>Home</span>
-        </a>
-        <a class="navbar-item" href="/#about">
-          <span class="icon">
-            <i class="fas fa-info"></i>
-          </span>
-          <span>About Me</span>
-        </a>
-        <a class="navbar-item" href="/#resume">
-          <span class="icon">
-            <i class="fas fa-file-alt"></i>
-          </span>
-          <span>Resume</span>
-        </a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <div class="navbar-dropdown is-boxed ">
-            <a class="navbar-item is-2 is-black tat" href="/#acad_proj">
-              Academic Projects
-            </a>
-            <a class="navbar-item is-2 is-black tat" href="/#art_proj">
-              Art Projects
-            </a>
-          </div>
-          <div class="navbar-link is-white">
-            <span class="icon ">
-              <i class="fas fa-th-list "></i>
-            </span>
-            <span class="tiss">Projects</span>
-          </div>
-            
-        </div>
-        <a class="navbar-item" href="/#contact">
-          <span class="icon">
-            <i class="fas fa-envelope"></i>
-          </span>
-          <span>Contact</span>
-        </a>
-      </div>
-    </div>
-  </nav>
-  <!-- Header -->
-<!--   <section class="hero">
-    <div class="hero-body">
-      <div class="backgn-container">
-        <img class="backgn-img"  src="../images/acad_proj/snak3d/test.jpg">
-      </div>
-      <div class="columns is-centered">
-        
-        <img  src="../images/Blink.jpg" class="column is-5 main-img">
-        
-      </div>
-    </div>
-  </section> -->
-  <!-- Main Section -->
-  <section class="section">
-    <div class="columns">
-      <div class="column is-5 is-offset-1">
-        <p class="title header-size">SNAK3D</p>
-        <p class="subtitle is-3">
-          AN ARCADE 3D SNAKE GAME MACHINE
-          <br>
-          <span class="tag is-size-6 is-primary">FPGA</span>
-          <span class="tag is-size-6 is-primary">Mojo</span>
-          <span class="tag is-size-6 is-primary">Electronic circuit</span>
-        </p>
-        <p class="subtitle is-4 is-size-5">          
-          <strong class="is-size-3">About the game:</strong>
-          <br>
-          The game was inspired from the classic retro Snake game to build Snak3d into a 3-dimension snake game. The machine consists of 3 main component:
-          <li class="is-size-5"><strong >The control keyboard</strong> conists of buttons to control the game.</li>
-          <li class="is-size-5"><strong>The circuit</strong> consist of a Mojo FPGA that was programmed on computational logic devices. The Mojo is connected to a other I/O devices in other to run the Game.</li>
-          <li class="is-size-5"><strong>The LED matrix</strong> is a 5x5x5 red LED matrix cube. In order to control the LED successfully, we ground the 5 layers and multiplex them while giving signal input to the columns. This allowed us to control each individual LED precisely. </li>
-          <br><br>
-          This project was made for <strong>50.002 Computation Structure</strong> course together with 4 more members.
+        </head>
 
-        </p>
-        <br>
-        <p class="is-4 is-size-5">  
-          <strong class="is-size-3 is-3">How to play:</strong>
-          <br>
-          The player is able to control the snake in 6 directions: forward, backward, left, right, up and down. At any time, a fruit will be spawn randomly in the environment. The player will have to collect as many fruit as possible within 60 seconds.        
-      </div>
+	<body>
+        <!-- <canvas id="three_background" myattr="myattr"></canvas> -->
+                <script type="module" src="../assets/js/three_background.js"></script>
 
-      <div class="column is-4 is-offset-1 has-text-centered">
-        <br><br>
-        <img src="../images/acad_proj/snak3d/snak3d_poster.jpg">
-        <p>Project Poster</p>
-      </div>
-      
-    </div>
-    <br>
-    <div class="columns">
-      <div class="column is-4 is-offset-2 has-text-centered">
-        <img style="width: 98%" src="../images/acad_proj/snak3d/snak3d_01.jpg">
-        <p>Game machine</p>
-      </div>
-      <div class="column is-3 is-offset-1 has-text-centered" >
-        <img src="../images/acad_proj/snak3d/3dsnake.gif">
-        <!-- <video controls>
-          <source src="../images/acad_proj/snak3d/snak3d_demo.mp4" type="">
-            Your browser does not support HTML5 video.
-        </video> -->
-        <p>Game demo video</p>
+                <div id="container" >
+                        <div class="cr_box shadow">
+                                <i class="fa fa-copyright"  aria-hidden="true"></i> Pham Trung Viet
+                        </div>
+                        <div class="option_box">
 
-      </div>
-    </div>
-    <div class="columns is-mobile is-centered has-text-centered">
-      <div class="column is-half ">
-        <img src="../images/acad_proj/snak3d/snak3d_team.jpg">
-        <p>My group</p>
-      </div>
-    </div>
+                                <div class="btn" id="theme_dark" >
+                                        <div class="btn_text shadow">Dark</div>
+                                        <div class="btn_box"></div>
+                                        <div class="btn_text shadow">Light</div>
+                                </div>
 
-    <div class="columns is-mobile">
-      <div class="column is-3">
-        <a href="/blink_ap" class="button is-success">Previous Project</a>
-      </div>
+                        </div>
 
-      <div class="column is-3 is-offset-6" align="right">
-        <a href="/urop_ap" class="button is-success">Next Project</a>
-      </div>
-      
-    </div>
-  </section>
+                        <div class="nav_box">
+                          <a class="shadow-thick" href="/#projects">
+                            <i class="fa fa-angle-right"></i> PROJECTS
+                          </a>
+                        </div>
 
+                        <div id="frame">
+                          <section  class="section project-detail-box has-text-left hide-scroll-bar background-blur">
+                            <div class="columns">
+                              <div class="column is-5 is-offset-1">
+                                <p class="project-detail-title">SNAK3D</p>
+                                <p class="project-detail-subtitle is-3">
+                                  AN ARCADE 3D SNAKE GAME MACHINE
+                                  <br>
+                                  <span class="tag is-size-6 is-primary">FPGA</span>
+                                  <span class="tag is-size-6 is-primary">Mojo</span>
+                                  <span class="tag is-size-6 is-primary">Electronic circuit</span>
+                                </p>
+                                <p class="project-detail-body is-4 is-size-5">          
+                                  <strong class="project-detail-subtitle is-size-3">About the game:</strong>
+                                  <br>
+                                  The game was inspired from the classic retro Snake game to build Snak3d into a 3-dimension snake game. The machine consists of 3 main component:
+                                  <li class="is-size-5"><strong >The control keyboard</strong> conists of buttons to control the game.</li>
+                                  <li class="is-size-5"><strong>The circuit</strong> consist of a Mojo FPGA that was programmed on computational logic devices. The Mojo is connected to a other I/O devices in other to run the Game.</li>
+                                  <li class="is-size-5"><strong>The LED matrix</strong> is a 5x5x5 red LED matrix cube. In order to control the LED successfully, we ground the 5 layers and multiplex them while giving signal input to the columns. This allowed us to control each individual LED precisely. </li>
+                                  <br><br>
+                                  This project was made for <strong>50.002 Computation Structure</strong> course together with 4 more members.
+                        
+                                </p>
+                                <br>
+                                <p class="is-4 is-size-5">  
+                                  <strong class="is-size-3 is-3">How to play:</strong>
+                                  <br>
+                                  The player is able to control the snake in 6 directions: forward, backward, left, right, up and down. At any time, a fruit will be spawn randomly in the environment. The player will have to collect as many fruit as possible within 60 seconds.        
+                              </div>
+                        
+                              <div class="column is-4 is-offset-1 has-text-centered">
+                                <br><br>
+                                <img src="../images/acad_proj/snak3d/snak3d_poster.jpg">
+                                <p>Project Poster</p>
+                              </div>
+                              
+                            </div>
+                            <br>
+                            <div class="columns">
+                              <div class="column is-4 is-offset-2 has-text-centered">
+                                <img style="width: 98%" src="../images/acad_proj/snak3d/snak3d_01.jpg">
+                                <p>Game machine</p>
+                              </div>
+                              <div class="column is-3 is-offset-1 has-text-centered" >
+                                <img src="../images/acad_proj/snak3d/3dsnake.gif">
+                                <!-- <video controls>
+                                  <source src="images/acad_proj/snak3d/snak3d_demo.mp4" type="">
+                                    Your browser does not support HTML5 video.
+                                </video> -->
+                                <p>Game demo video</p>
+                        
+                              </div>
+                            </div>
+                            <div class="columns is-mobile is-centered has-text-centered">
+                              <div class="column is-half ">
+                                <img src="../images/acad_proj/snak3d/snak3d_team.jpg">
+                                <p>My group</p>
+                              </div>
+                            </div>
+                        
+                            <!-- <div class="columns is-mobile">
+                              <div class="column is-3">
+                                <a href="/blink_ap" class="button is-success">Previous Project</a>
+                              </div>
+                        
+                              <div class="column is-3 is-offset-6" align="right">
+                                <a href="/urop_ap" class="button is-success">Next Project</a>
+                              </div>
+                              
+                            </div> -->
+                          </section>
+                                
+                        </div>
+                </div>
 
-</body>
+                <!-- <div class="container centered-box">
+                        <div class="box">
+                                <h1 class="title">Centered Box</h1>
+                                <p>This box is perfectly centered in the middle of the screen!</p>
+                        </div>
+                </div> -->
+
+	</body>
+</html>

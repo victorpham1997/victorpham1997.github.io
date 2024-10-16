@@ -1,166 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Viet Pham</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <!-- Bulma Version 0.8.x-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">        
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+        <script async type="text/javascript" src="../assets/js/email.js"></script>
+        <!-- <script async type="text/javascript" src="assets/js/main.js"></script> -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Underwater Robot</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <!-- Bulma Version 0.8.x-->
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-  <link rel="stylesheet" type="text/css" href="../assets/css/acad_proj_style.css">
-  <script async type="text/javascript" src="../assets/js/bulma.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBQLD161PL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Google tag (gtag.js) -->
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBQLD161PL"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-    gtag('config', 'G-ZBQLD161PL');
-  </script>
-</head>
+                gtag('config', 'G-ZBQLD161PL'); -->
+                <!-- Load three.js -->
 
-<body>
-  <!-- Navigation bar -->
-  <nav class="navbar is-fixed-top">
-    <div class="navbar-brand">
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-        <span class="is-white"></span>
-        <span class="is-white"></span>
-        <span class="is-white"></span>
-      </div>
-    </div>
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
-      <div class="navbar-end">
-        <a class="navbar-item" href="/#home">
-          <span class="icon">
-            <i class="fas fa-home"></i>
-          </span>
-          <span>Home</span>
-        </a>
-        <a class="navbar-item" href="/#about">
-          <span class="icon">
-            <i class="fas fa-info"></i>
-          </span>
-          <span>About Me</span>
-        </a>
-        <a class="navbar-item" href="/#resume">
-          <span class="icon">
-            <i class="fas fa-file-alt"></i>
-          </span>
-          <span>Resume</span>
-        </a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <div class="navbar-dropdown is-boxed ">
-            <a class="navbar-item is-2 is-black tat" href="/#acad_proj">
-              Academic Projects
-            </a>
-            <a class="navbar-item is-2 is-black tat" href="/#art_proj">
-              Art Projects
-            </a>
-          </div>
-          <div class="navbar-link is-white">
-            <span class="icon ">
-              <i class="fas fa-th-list "></i>
-            </span>
-            <span class="tiss">Projects</span>
-          </div>
-            
-        </div>
-        <a class="navbar-item" href="/#contact">
-          <span class="icon">
-            <i class="fas fa-envelope"></i>
-          </span>
-          <span>Contact</span>
-        </a>
-      </div>
-    </div>
-  </nav>
-  <!-- Header -->
-<!--   <section class="hero">
-    <div class="hero-body">
-      <div class="backgn-container">
-        <img class="backgn-img"  src="../images/acad_proj/snak3d/test.jpg">
-      </div>
-      <div class="columns is-centered">
-        
-        <img  src="../images/Blink.jpg" class="column is-5 main-img">
-        
-      </div>
-    </div>
-  </section> -->
-  <!-- Main Section -->
-  <section class="section">
-    <div class="columns">
-      <div class="column is-5 is-offset-1">
-        <p class="title header-size">Underwater Bio-inspired Mobile Robot</p>
-        <p class="subtitle is-3">
-          A stingray robot with soft material fins that can travel underwater
-          <br>
-          <span class="tag is-size-6 is-primary">3D Printing</span>
-          <span class="tag is-size-6 is-primary">Arduino</span>
-          <span class="tag is-size-6 is-primary">Electronic circuit</span>
-        </p>
-        
-        <!-- <p class="subtitle is-4">
-          This project was done under SUTD's <strong>Undergraduate Research Opportunity Programme (UROP)</strong>. The project was under Professor Pablo Valdivia y Alvarado and his colleagues.
-          <br>
-          <strong class="subtitle is-3">About the project:</strong>
-          <br>
-          The main aim of the project was to explore the fabrication of soft material for robotics part in order to perform more versatile task. As such, the stingray robots was built to have soft fins that are controlled by actuators to perform wavelike motion, hence allowed it to swim underwater.
-          <br><br>
-          For my part of the project, I mainly helped develop the inner circuit and the Arduino programme of the robot to ensure the robot movement is reliable.
-        </p>
-         -->
-      </div>
+        </head>
 
-      <div class="column is-3 is-offset-2 has-text-centered">
-        <img src="../images/acad_proj/urop/robot.jpg">
-        <p>Stingray robot halfway through fins printing process</p>
-      </div>
+	<body>
+        <!-- <canvas id="three_background" myattr="myattr"></canvas> -->
+                <script type="module" src="../assets/js/three_background.js"></script>
 
+                <div id="container" >
+                        <div class="cr_box shadow">
+                                <i class="fa fa-copyright"  aria-hidden="true"></i> Pham Trung Viet
+                        </div>
+                        <div class="option_box">
 
-    </div>
-    <div class="columns">
-      <p class="column subtitle is-10 is-offset-1">
-          <strong class="subtitle is-3">About the project:</strong>
-          <br>
-          The main aim of the project was to explore the fabrication of soft material for robotics part in order to perform more versatile task. As such, the stingray robots was built to have soft fins that are controlled by actuators to perform wavelike motion, hence allowed it to swim underwater.
-          <br><br>
-          My role in the project was to assist the integration of the IMU unit to the robot circuit. This will help to track and stablise the robot's movement under water.
-          <br><br>
-          This project was done under SUTD's <strong>Undergraduate Research Opportunity Programme (UROP)</strong>. The project was supervised by Professor Pablo Valdivia y Alvarado and his colleagues.
-        </p>
-    </div>
-    <br><br>
-    <div class="columns is-vcentered">
-      <div class="column is-4 is-offset-2 has-text-centered ">
-        <img src="../images/acad_proj/urop/robot_motion.jpg">
-        <p>Side view of robot motions</p>
-      </div>
+                                <div class="btn" id="theme_dark" >
+                                        <div class="btn_text shadow">Dark</div>
+                                        <div class="btn_box"></div>
+                                        <div class="btn_text shadow">Light</div>
+                                </div>
 
-      <div class="column is-4 is-offset-1 has-text-centered ">
-        <img src="../images/acad_proj/urop/urop_poster.jpg">
-        <p>Project poster</p>
-      </div>
-    </div>
+                        </div>
 
-    <div class="columns is-mobile">
-      <div class="column is-3">
-        <a href="/snak3d_ap" class="button is-success">Previous Project</a>
-      </div>
+                        <div class="nav_box">
+                          <a class="shadow-thick" href="/#projects">
+                            <i class="fa fa-angle-right"></i> PROJECTS
+                          </a>
+                        </div>
 
-      <div class="column is-3 is-offset-6" align="right">
-        <a href="/astar_ap" class="button is-success">Next Project</a>
-      </div>
-      
-    </div>
-  </section>
+                        <div id="frame">
+                          <section  class="section project-detail-box has-text-left hide-scroll-bar background-blur">
+                            <div class="columns">
+                              <div class="column is-5 is-offset-1">
+                                <p class="project-detail-title">Underwater Bio-inspired Mobile Robot</p>
+                                <p class="project-detail-subtitle is-3">
+                                  A stingray robot with soft material fins that can travel underwater
+                                  <br>
+                                  <span class="tag is-size-6 is-primary">3D Printing</span>
+                                  <span class="tag is-size-6 is-primary">Arduino</span>
+                                  <span class="tag is-size-6 is-primary">Electronic circuit</span>
+                                </p>
+                                
+                                <!-- <p class="subtitle is-4">
+                                  This project was done under SUTD's <strong>Undergraduate Research Opportunity Programme (UROP)</strong>. The project was under Professor Pablo Valdivia y Alvarado and his colleagues.
+                                  <br>
+                                  <strong class="subtitle is-3">About the project:</strong>
+                                  <br>
+                                  The main aim of the project was to explore the fabrication of soft material for robotics part in order to perform more versatile task. As such, the stingray robots was built to have soft fins that are controlled by actuators to perform wavelike motion, hence allowed it to swim underwater.
+                                  <br><br>
+                                  For my part of the project, I mainly helped develop the inner circuit and the Arduino programme of the robot to ensure the robot movement is reliable.
+                                </p>
+                                  -->
+                              </div>
+                        
+                              <div class="column  is-3 is-offset-2 has-text-centered">
+                                <img src="../images/acad_proj/urop/robot.jpg">
+                                <p>Stingray robot halfway through fins printing process</p>
+                              </div>
+                        
+                        
+                            </div>
+                            <div class="columns">
+                              <p class="column project-detail-body is-10 is-offset-1">
+                                  <strong class="project-detail-subtitle is-3">About the project:</strong>
+                                  <br>
+                                  The main aim of the project was to explore the fabrication of soft material for robotics part in order to perform more versatile task. As such, the stingray robots was built to have soft fins that are controlled by actuators to perform wavelike motion, hence allowed it to swim underwater.
+                                  <br><br>
+                                  My role in the project was to assist the integration of the IMU unit to the robot circuit. This will help to track and stablise the robot's movement under water.
+                                  <br><br>
+                                  This project was done under SUTD's <strong>Undergraduate Research Opportunity Programme (UROP)</strong>. The project was supervised by Professor Pablo Valdivia y Alvarado and his colleagues.
+                                </p>
+                            </div>
+                            <br><br>
+                            <div class="columns is-vcentered">
+                              <div class="column is-4 is-offset-2 has-text-centered ">
+                                <img src="../images/acad_proj/urop/robot_motion.jpg">
+                                <p>Side view of robot motions</p>
+                              </div>
+                        
+                              <div class="column is-4 is-offset-1 has-text-centered ">
+                                <img src="../images/acad_proj/urop/urop_poster.jpg">
+                                <p>Project poster</p>
+                              </div>
+                            </div>
+                        
+                            <!-- <div class="columns is-mobile">
+                              <div class="column is-3">
+                                <a href="/snak3d_ap" class="button is-success">Previous Project</a>
+                              </div>
+                        
+                              <div class="column is-3 is-offset-6" align="right">
+                                <a href="/astar_ap" class="button is-success">Next Project</a>
+                              </div>
+                              
+                            </div> -->
+                          </section>
+                                
+                        </div>
+                </div>
 
+                <!-- <div class="container centered-box">
+                        <div class="box">
+                                <h1 class="title">Centered Box</h1>
+                                <p>This box is perfectly centered in the middle of the screen!</p>
+                        </div>
+                </div> -->
 
-</body>
+	</body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Viet Pham</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <!-- Bulma Version 0.8.x-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">        
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+        <script async type="text/javascript" src="../assets/js/bulma.js"></script>
+        <script async type="text/javascript" src="../assets/js/art.js"></script>
+        <!-- <script async type="text/javascript" src="../assets/js/main.js"></script> -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Google tag (gtag.js) -->
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBQLD161PL"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-ZBQLD161PL'); -->
+                <!-- Load three.js -->
+
+        </head>
+
+	<body>
+        <!-- <canvas id="three_background" myattr="myattr"></canvas> -->
+                <script type="module" src="../assets/js/three_background.js"></script>
+
+                <div id="container" >
+
+                        
+                        <div id="as01" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/as01.jpg">
+                                    <p>Sketch of Muskoka Boathouse by Christopher Simmonds Architect</p>
+                                    <p class="subtext">Watercolour on paper</p>
+                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="hs03" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/hs03.jpg">
+                                    <p>Sigmund Freud portrait</p>
+                                    <p>Pen on paper</p>                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="as02" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/as02.jpg">
+                                    <p>House In Sèvres by Colboc Franzen & Associés</p>
+                                    <p class="subtext">Watercolour on paper</p>
+                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="hs02" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/hs02.jpg">
+                                    <p>Erwin Schrödinger portrait</p>
+                                    <p>Watercolour on paper</p>
+                                </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="fs04" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/fs04.jpg">
+                                    <p>Rooftop sketch in Singapore</p>
+                                    <p>Watercolour on paper</p>
+                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+
+                        <div id="ot04" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/ot04.jpg">
+                                    <p>Data Storm</p>
+                                    <p class="subtext">Acrylic on canvas</p>
+                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="ot01" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/ot01.jpg">
+                                    <p>Lake painting</p>
+                                    <p>Watercolour on paper</p>
+                                </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="fs01" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/fs01.jpg">
+                                    <p>River Valley Road</p>
+                                    <p>Watercolour on paper</p>
+                                </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="ot03" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/ot03.jpg">
+                                    <p>Dog</p>
+                                    <p>Pastel on paper</p>
+                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="as03" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/as03.jpg">
+                                    <p>Unknown Architecture</p>
+                                    <p>Watercolour on paper</p>
+                                </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="hs04" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/hs04.jpg">
+                                    <p>Human sketches #2</p>
+                                    <p>Pen on paper</p>
+                                </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="fs02" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/fs02.jpg">
+                                    <p>Rooftop sketch in Tokyo</p>
+                                    <p>Pen on paper</p>
+                                </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="ot02" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/ot02.jpg">
+                                    <p>A-level Art Coursework</p>
+                                    <p>Watercolour on paper</p>                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="as05" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/as05.jpg">
+                                    <p>Visual Arts Building at the University of Iowa by Steven Holl Architects</p>
+                                    <p>Pen on paper</p>
+                                </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="fs03" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/fs03.jpg">
+                                    <p>Rooftop sketch in Tokyo</p>
+                                    <p>Pen on paper</p>
+                                </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="hs05" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/hs05.jpg">
+                                    <p>Albert Einstein portrait</p>
+                                    <p>Charcoal on paper</p>
+                                </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="as04" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content ">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/as04.jpg">
+                                    <p>Sunlighthouse by Juri Troy Architects</p>
+                                    <p class="subtext">Watercolour on paper</p>
+                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="fs05" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/field_sketches/fs05.jpg">
+                                    <p>Coffee shop in Nha Trang</p>
+                                    <p>Ink on paper</p>
+                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="fs08" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/field_sketches/fs08.jpg">
+                                    <p>Arima Onsen Sketch</p>
+                                    <p>Ink on paper</p>
+                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="hs06" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/field_sketches/hs06.jpg">
+                                    <p>Man smoking sketch</p>
+                                    <p>Ink on paper</p>
+                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="ot05" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/field_sketches/ot05.jpg">
+                                    <p>Frieren sketch</p>
+                                    <p>Ink on paper</p>
+                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="ot06" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/field_sketches/ot06.jpg">
+                                    <p>Fantasy sketch</p>
+                                    <p>Ink on paper</p>
+                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="ot07" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/field_sketches/ot07.jpg">
+                                    <p>Church of Saint-Ouen painting</p>
+                                    <p>Watercolour on paper</p>
+                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+
+                        <div id="ot08" class="modal modal-fx-fadeInScale">
+                                <div class="modal-background"></div>
+                                <div class="modal-content">
+                                  <div class="image-container">
+                                    <img src="../images/artworks/field_sketches/ot08.jpg">
+                                    <p>Machinarium</p>
+                                    <p>Ink on paper</p>
+                                  </div>
+                                </div>
+                                <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                        
+
+
+                        <div class="cr_box shadow">
+                                <i class="fa fa-copyright"  aria-hidden="true"></i> Pham Trung Viet
+                        </div>
+                        <div class="option_box">
+
+                                <div class="btn" id="theme_dark" >
+                                        <div class="btn_text shadow">Dark</div>
+                                        <div class="btn_box"></div>
+                                        <div class="btn_text shadow">Light</div>
+                                </div>
+                        </div>
+                        <div class="nav_box">
+                                <a class="shadow-thick" href="/">
+                                        <i class="fa fa-angle-right"></i> HOME
+                                </a>
+                        </div>
+
+                        <div id="frame" class="background-blur has-text-center ">
+                                <div class="columns is-8 art-container is-multiline hide-scroll-bar ">
+
+                                        <div class="column is-full has-text-center  ">
+                                                <p class="page_title ">
+                                                        ART
+                                                </p>
+                                        </div>
+
+                                        <div class="column is-full has-text-left  ">
+                                                <div>
+                                                        <a id="" class="art-subtitle is-active ">
+                                                                All 
+                                                        </a>
+
+                                                        <a id="as" class="art-subtitle  ">
+                                                                Architecture Sketches 
+                                                        </a>
+                                                        <a id="hs" class="art-subtitle ">
+                                                                Human Sketches 
+                                                        </a>
+                                                        <a id="ot" class="art-subtitle ">
+                                                                Others 
+                                                        </a>
+                                                </div>
+                                                <br>
+                                                <div class="line"></div>
+                                        </div>
+
+                                        <div id="col-0" class="column is-4 ">
+                                                <!-- Column 1-->
+                                                <a  id="show" data-target="#as01" >
+                                                        <img class="project-img-1" src="../images/artworks/as01.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Sketch of Muskoka Boathouse</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#ot04" >
+                                                        <img class="project-img-2" src="../images/artworks/ot04.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Data Storm</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#fs02" >
+                                                        <img class="project-img-1" src="../images/artworks/fs02.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Asakusa street in Tokyo</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#hs02" >
+                                                        <img class="project-img-2" src="../images/artworks/hs02.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Erwin Schrödinger portrait</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#ot01" >
+                                                        <img class="project-img-1" src="../images/artworks/ot01.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Lake painting</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#ot03" >
+                                                        <img class="project-img-2" src="../images/artworks/ot03.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Dog</span>
+                                                </a>
+
+                                        </div>
+                                        <div id="col-1" class="column  is-4 ">
+                                                <!-- Column 2 section-->
+                                                <a  id="show" data-target="#fs04" >
+                                                        <img class="project-img-2" src="../images/artworks/fs04.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Rooftop sketch in Singapore</span>
+                                                </a>
+                                                
+                                                <a  id="show" data-target="#ot02" >
+                                                        <img class="project-img-1" src="../images/artworks/ot02.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>A-level Art Coursework</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#as02" >
+                                                        <img class="project-img-2" src="../images/artworks/as02.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>House In Sèvres by Colboc Franzen & Associés</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#fs01" >
+                                                        <img class="project-img-1" src="../images/artworks/fs01.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>River Valley Road</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#as03" >
+                                                        <img class="project-img-2" src="../images/artworks/as03.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Unknown Architecture</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#hs05" >
+                                                        <img class="project-img-1" src="../images/artworks/hs05.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Albert Einstein portrait</span>
+                                                </a>
+                                                
+                                        </div>
+                                        <div id="col-2" class="column  is-4 ">
+                                                <!-- Column 3 section-->
+                                                <a  id="show" data-target="#as04" >
+                                                        <img class="project-img-1" src="../images/artworks/as04.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Sunlighthouse by Juri Troy Architects</span>
+                                                </a>
+                                                
+                                                <a  id="show" data-target="#hs03" >
+                                                        <img class="project-img-2" src="../images/artworks/hs03.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Sigmund Freud portrait</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#fs05" >
+                                                        <img class="project-img-1" src="../images/artworks/fs05.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Coffee shop in Nha Trang</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#fs03" >
+                                                        <img class="project-img-2" src="../images/artworks/fs03.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Rooftop sketch in Tokyo</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#hs05" >
+                                                        <img class="project-img-1" src="../images/artworks/hs04.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Human sketches #2</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#as05" >
+                                                        <img class="project-img-2" src="../images/artworks/as05.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Visual Arts Building at the University of Iowa</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#ot05" >
+                                                        <img class="project-img-2" src="../images/artworks/ot05.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Frieren sketch</span>
+                                                </a>
+                                                
+                                                <a  id="show" data-target="#ot07" >
+                                                        <img class="project-img-2" src="../images/artworks/ot07.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Church of Saint-Ouen painting</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#ot08" >
+                                                        <img class="project-img-2" src="../images/artworks/ot08.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Machinarium</span>
+                                                </a>
+
+
+                                                <a  id="show" data-target="#hs06" >
+                                                        <img class="project-img-2" src="../images/artworks/hs06.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Man smoking sketch</span>
+                                                </a>
+
+                                                <a  id="show" data-target="#fs08" >
+                                                        <img class="project-img-2" src="../images/artworks/fs08.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Arima Onsen Sketch</span>
+                                                </a>
+
+                                                
+                                                <a  id="show" data-target="#ot06" >
+                                                        <img class="project-img-2" src="../images/artworks/ot06.jpg">
+                                                        <span class=" art-caption has-text-left line"><br>Fantasy sketch</span>
+                                                </a>
+
+                                        </div>
+                                </div>
+                                <!-- <a class="column is-full" href="https://threejs.org" target="_blank" rel="noopener">three.js</a> -->
+                        </div>
+                </div>
+	</body>
+</html>

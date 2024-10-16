@@ -1,167 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Viet Pham</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <!-- Bulma Version 0.8.x-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">        
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+        <script async type="text/javascript" src="../assets/js/email.js"></script>
+        <!-- <script async type="text/javascript" src="assets/js/main.js"></script> -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Rehab Game</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <!-- Bulma Version 0.8.x-->
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-  <link rel="stylesheet" type="text/css" href="../assets/css/acad_proj_style.css">
-  <script async type="text/javascript" src="../assets/js/bulma.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBQLD161PL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Google tag (gtag.js) -->
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBQLD161PL"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-    gtag('config', 'G-ZBQLD161PL');
-  </script>
-</head>
+                gtag('config', 'G-ZBQLD161PL'); -->
+                <!-- Load three.js -->
 
-<body>
-  <!-- Navigation bar -->
-  <nav class="navbar is-fixed-top">
-    <div class="navbar-brand">
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-        <span class="is-white"></span>
-        <span class="is-white"></span>
-        <span class="is-white"></span>
-      </div>
-    </div>
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
-      <div class="navbar-end">
-        <a class="navbar-item" href="/#home">
-          <span class="icon">
-            <i class="fas fa-home"></i>
-          </span>
-          <span>Home</span>
-        </a>
-        <a class="navbar-item" href="/#about">
-          <span class="icon">
-            <i class="fas fa-info"></i>
-          </span>
-          <span>About Me</span>
-        </a>
-        <a class="navbar-item" href="/#resume">
-          <span class="icon">
-            <i class="fas fa-file-alt"></i>
-          </span>
-          <span>Resume</span>
-        </a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <div class="navbar-dropdown is-boxed ">
-            <a class="navbar-item is-2 is-black tat" href="/#acad_proj">
-              Academic Projects
-            </a>
-            <a class="navbar-item is-2 is-black tat" href="/#art_proj">
-              Art Projects
-            </a>
-          </div>
-          <div class="navbar-link is-white">
-            <span class="icon ">
-              <i class="fas fa-th-list "></i>
-            </span>
-            <span class="tiss">Projects</span>
-          </div>
-            
-        </div>
-        <a class="navbar-item" href="/#contact">
-          <span class="icon">
-            <i class="fas fa-envelope"></i>
-          </span>
-          <span>Contact</span>
-        </a>
-      </div>
-    </div>
-  </nav>
-  <!-- Header -->
-<!--   <section class="hero">
-    <div class="hero-body">
-      <div class="backgn-container">
-        <img class="backgn-img"  src="../images/acad_proj/snak3d/test.jpg">
-      </div>
-      <div class="columns is-centered">
-        
-        <img  src="../images/Blink.jpg" class="column is-5 main-img">
-        
-      </div>
-    </div>
-  </section> -->
-  <!-- Main Section -->
-  <section class="section">
-    <div class="columns">
-      <div class="column is-10 is-offset-1">
-        <p class="title header-size">Rehabilitation Game for Physically Impared Patients</p>
-        <p class="subtitle is-3">
-          A fun experience to help patients rehabilitate
-          <br>
-          <span class="tag is-size-6 is-primary">Unity 3D</span>
-          <span class="tag is-size-6 is-primary">C#</span>
-        </p>
-        
-        <p class="subtitle is-4 is-size-5">
-          <strong class="subtitle is-3">About the Project:</strong>
-          <br>
-          The aim of the project was to develop an interactive game for physcially impared patients to rehabilitate during and after treatment. In this project, we focus on upper body limbs and hand-eye coordination training.
-          <br><br>
-          We developed 3 games using motion sensing devices such as Myo Armband and Leap Motion and eye tracking decive: Tobii Eyex. The games run on Unity3D engine.
-          <br><br>
-          This project was done under <strong>A*STAR Research Attachment Programme (ARAP)</strong> in a group of 2 students.
+        </head>
 
-        </p>
-        
-      </div>
+	<body>
+        <!-- <canvas id="three_background" myattr="myattr"></canvas> -->
+                <script type="module" src="../assets/js/three_background.js"></script>
 
-    </div>
-    <br>
-    <div class="columns is-centered">
-      <div class="column is-3">
-        <img src="../images/acad_proj/astar/astar_01.jpg">
-        <p class="subtitle">
-          The first game required user to use his arm to move the cursor to the highlighted object while looking at it and squeeze his hand to score the point.
-          <br>
-          This is to help the training of hand-eye coordination and hand muscle.
-        </p>
-      </div>
+                <div id="container" >
+                        <div class="cr_box shadow">
+                                <i class="fa fa-copyright"  aria-hidden="true"></i> Pham Trung Viet
+                        </div>
+                        <div class="option_box">
 
-      <div class="column is-3">
-        <img src="../images/acad_proj/astar/astar_02.jpg">
-        <p class="subtitle">
-          The second game required user to collect the ball from one of the three colour box and drop it into the respective colour box.
-          <br>
-          This is to help the training of hand rotation and reflex.
-        </p>
-      </div>
+                                <div class="btn" id="theme_dark" >
+                                        <div class="btn_text shadow">Dark</div>
+                                        <div class="btn_box"></div>
+                                        <div class="btn_text shadow">Light</div>
+                                </div>
 
-      <div class="column is-3">
-        <img src="../images/acad_proj/astar/astar_03.jpg">
-        <p class="subtitle">
-          The third game required user to carry out a series of hand movement as required by the number indicated. User has to either squeeze the hand or relax it as instructed by the game. 
-          <br>
-          This is to help the training of arm stretching and hand muscle.
-        </p>
-      </div>
+                        </div>
 
-    </div>
+                        <div class="nav_box">
+                          <a class="shadow-thick" href="/#projects">
+                            <i class="fa fa-angle-right"></i> PROJECTS
+                          </a>
+                        </div>
 
-    <div class="columns is-mobile">
-      <div class="column is-3">
-        <a href="/urop_ap" class="button is-success">Previous Project</a>
-      </div>
+                        <div id="frame">
+                          <section  class="section project-detail-box has-text-left hide-scroll-bar background-blur">
+                            <div class="columns">
+                              <div class="column is-10 is-offset-1">
+                                <p class="project-detail-title">Rehabilitation Game for Physically Impared Patients</p>
+                                <p class="project-detail-subtitle is-3">
+                                  A fun experience to help patients rehabilitate
+                                  <br>
+                                  <span class="tag is-size-6 is-primary">Unity 3D</span>
+                                  <span class="tag is-size-6 is-primary">C#</span>
+                                </p>
+                                
+                                <p class="project-detail-body is-4 is-size-5">
+                                  <strong class="project-detail-subtitle is-3">About the Project:</strong>
+                                  <br>
+                                  The aim of the project was to develop an interactive game for physcially impared patients to rehabilitate during and after treatment. In this project, we focus on upper body limbs and hand-eye coordination training.
+                                  <br><br>
+                                  We developed 3 games using motion sensing devices such as Myo Armband and Leap Motion and eye tracking decive: Tobii Eyex. The games run on Unity3D engine.
+                                  <br><br>
+                                  This project was done under <strong>A*STAR Research Attachment Programme (ARAP)</strong> in a group of 2 students.
+                        
+                                </p>
+                                
+                              </div>
+                        
+                            </div>
+                            <br>
+                            <div class="columns is-centered">
+                              <div class="column is-3">
+                                <img src="../images/acad_proj/astar/astar_01.jpg">
+                                <p class="project-detail-body">
+                                  The first game required user to use his arm to move the cursor to the highlighted object while looking at it and squeeze his hand to score the point.
+                                  <br>
+                                  This is to help the training of hand-eye coordination and hand muscle.
+                                </p>
+                              </div>
+                        
+                              <div class="column is-3">
+                                <img src="../images/acad_proj/astar/astar_02.jpg">
+                                <p class="project-detail-body">
+                                  The second game required user to collect the ball from one of the three colour box and drop it into the respective colour box.
+                                  <br>
+                                  This is to help the training of hand rotation and reflex.
+                                </p>
+                              </div>
+                        
+                              <div class="column is-3">
+                                <img src="../images/acad_proj/astar/astar_03.jpg">
+                                <p class="project-detail-body">
+                                  The third game required user to carry out a series of hand movement as required by the number indicated. User has to either squeeze the hand or relax it as instructed by the game. 
+                                  <br>
+                                  This is to help the training of arm stretching and hand muscle.
+                                </p>
+                              </div>
+                        
+                            </div>
+                        
+                            <!-- <div class="columns is-mobile">
+                              <div class="column is-3">
+                                <a href="/urop_ap" class="button is-success">Previous Project</a>
+                              </div>
+                        
+                              <div class="column is-3 is-offset-6" align="right">
+                              </div>
+                            </div> -->
+                          </section>
+                                
+                        </div>
+                </div>
 
-      <div class="column is-3 is-offset-6" align="right">
-        <!-- <a href="../urop_ap" class="button is-success">Next Project</a> -->
-      </div>
-      
-    </div>
-  </section>
+                <!-- <div class="container centered-box">
+                        <div class="box">
+                                <h1 class="title">Centered Box</h1>
+                                <p>This box is perfectly centered in the middle of the screen!</p>
+                        </div>
+                </div> -->
 
-
-</body>
+	</body>
+</html>

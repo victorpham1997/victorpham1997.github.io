@@ -1,532 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Viet Pham</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <!-- Bulma Version 0.8.x-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">        
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+        <!-- <script async type="text/javascript" src="assets/js/main.js"></script> -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Viet Pham</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <!-- Bulma Version 0.8.x-->
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script async type="text/javascript" src="assets/js/email.js"></script>
-  <script async type="text/javascript" src="assets/js/bulma.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBQLD161PL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Google tag (gtag.js) -->
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBQLD161PL"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-    gtag('config', 'G-ZBQLD161PL');
-  </script>
-</head>
+                gtag('config', 'G-ZBQLD161PL'); -->
+                <!-- Load three.js -->
 
-<body>
-  <!-- Navigation bar -->
-  <nav class="navbar is-fixed-top">
-    <div class="navbar-brand">
-       
-      <a class="navbar-burger burger"  data-target="navbarExampleTransparentExample">
-        <span class="is-white"></span>
-        <span class="is-white"></span>
-        <span class="is-white"></span>
-      </a> 
-<!-- 
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div -->
-    </div>
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
-      <div class="navbar-end">
-        <a class="navbar-item" href="#home">
-          <span class="icon">
-            <i class="fas fa-home"></i>
-          </span>
-          <span>Home</span>
-        </a>
-        <a class="navbar-item" href="#about">
-          <span class="icon">
-            <i class="fas fa-info"></i>
-          </span>
-          <span>About Me</span>
-        </a>
-        <a class="navbar-item" href="#resume">
-          <span class="icon">
-            <i class="fas fa-file-alt"></i>
-          </span>
-          <span>Resume</span>
-        </a>
-        <div class="navbar-item has-dropdown is-hoverable" href="#portfolio">
-          <div class="navbar-dropdown is-boxed ">
-            <a class="navbar-item is-2 is-black tat" href="#acad_proj">
-              Academic Projects
-            </a>
-            <a class="navbar-item is-2 is-black tat" href="#art_proj">
-              Art Projects
-            </a>
-          </div>
-          <div class="navbar-link is-white">
-            <span class="icon ">
-              <i class="fas fa-th-list "></i>
-            </span>
-            <span class="tiss">Projects</span>
-          </div>
-            
-        </div>
-        <a class="navbar-item" href="#contact">
-          <span class="icon">
-            <i class="fas fa-envelope"></i>
-          </span>
-          <span>Contact</span>
-        </a>
-      </div>
-    </div>
-  </nav>
+        </head>
 
-  <!-- Header -->
-  <section class="hero is-fullheight is-fullheight-with-navbar" id="home">
-    <div class="hero-body banner">
-      <div class="header">
-        <img src="images/header.png">
-      </div>
-      <div class="container subtitle is-4 is-white">
-        <p class ="not-mobile">Hi! I am</p>
-        <h1 class="title is-1 is-white">
-          Viet Pham
-        </h1>
-        <h2 class="subtitle is-3 is-white">
-          Developer
-        </h2>
-      </div>
-    </div>
-  </section>
+	<body>
+                <script type="module" src="assets/js/three_background.js"></script>
 
-  <!-- About Me -->
-  <section class="section" id="about">
-    <br><br>
-    <!-- Title -->
-    <div class="section-heading has-text-centered">
-      <h3 class="title is-2">About Me</h3>
-      <h4 class="subtitle is-5">A little bit of who I am</h4>
-      <div class=" columns about-me-col">
-        <div class="column is-4 is-offset-2" style="padding: 2rem 2rem 2rem 2rem; ">
-          <img src="images/self.jpg">
-        </div>
-        <div class=" column is-4 has-text-left" style="padding: 2rem 2rem 2rem 2rem; ">
-          <p class="subtitle">
-            I am currently working as a Senior Data Engineer at Prudential Service Singapore. I graduated from Singapore University of Technology and Design (SUTD) in 2021 with a Bachelor in Computer Science.
-            <br><br>
-            When I was young, I used to dream of becoming an architect. This motivated me to pick up art and drawing to pursue this dream. However, something happened during my Secondary year that changed my life: I learned to write my first line of code! Since then, my love for programming grew stronger and stronger until I joined SUTD and decided to take on a CS major. Now, my main interest is machine learning and algorithm especially in the domain of computer vision and natural language processing.
-            <br><br>
-            My passion for art, fortunately, is still carrying on as I often find time to do small sketches of things and people that I observe in my daily life.
-            <br>
-            <div class="has-text-centered">
-              <a href="https://medium.com/@victorpham1997" class="icon subtitle is-2">
-                <i class="fab fa-medium-m"></i>
-              </a>
+                <div id="container" >
+                        <div class="cr_box shadow">
+                                <i class="fa fa-copyright"  aria-hidden="true"></i> Pham Trung Viet
+                        </div>
+                        <div class="option_box">
 
-              <a href="https://github.com/victorpham1997" class="icon subtitle is-2">
-                <i class="fab fa-github"></i>
-              </a>
-              <nbsp>
-              <a href="https://www.linkedin.com/in/trung-viet-pham/" class="icon subtitle is-2">
-                <i class="fab fa-linkedin"></i>
-              </a>
+                                <div class="btn" id="theme_dark" >
+                                        <div class="btn_text shadow">Dark</div>
+                                        <div class="btn_box"></div>
+                                        <div class="btn_text shadow">Light</div>
+                                </div>
 
-              <a href="mailto:victorpham1997@gmail.com" class="icon subtitle is-2">
-                <i class="fas fa-at"></i>
-              </a>
-            </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="columns has-same-height is-centered">
-      <!-- <div class="column is-one-quarter">
-        <div class="card card-equal-height">
-          <div class="card-content">
-            <h3 class="title is-4 has-text-centered">Profile</h3>
-            <div class="content">
-              <table class="table-profile">
-                <tr>
-                  <th colspan="1"></th>
-                  <th colspan="2"></th>
-                </tr>
-                <tr>
-                  <td>Address:</td>
-                  <td>55 Changi South Ave 1, 09-26, Singapore 485999</td>
-                </tr>
-                <tr>
-                  <td>Phone:</td>
-                  <td>+65 88362971</td>
-                </tr>
-                <tr>
-                  <td>Email:</td>
-                  <td>victorpham1997@gmail.com</td>
-                </tr>
-              </table>
-            </div>
-            <br>
-            <div class="card-footer">
-              <div class="card-footer-item buttons has-addons is-centered">
-                <a href="https://github.com/victorpham1997" class="button is-link">Github</a>
-                <a href="https://www.linkedin.com/in/trung-viet-pham/" class="button is-link">LinkedIn</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <div class="column is-8 has-text-centered">
-        <div class="card card-equal-height">
-          <div class="card-content skill-card">
-            <h3 class="title is-2">Skills</h3>
-              <div class="columns">
-                <div class="column is-4">
-                  <h3 class="subtitle is-5">LANGUAGES</h3>
-                  <div class="tag is-medium is-outlined">Python</div>
-                  <div class="tag is-medium is-outlined">Java</div>
-                  <div class="tag is-medium is-outlined">HTML5/CSS3</div>
-                  <div class="tag is-medium is-outlined">C#</div>
-                  <div class="tag is-medium is-outlined">C/C++</div>
+                        </div>
+
+                        <div class="n4v_box" id="n4v_box">
+                                
+                        </div>  
+
+                        <div id="frame">
+                                <div class="columns contain-header ">
+                                        <div id="header" class="column is-two-third has-text-left  ">
+                                                <div>
+                                                        <p class ="header_title box shadow-thick">Viet Pham</p>
+                                                </div>  
+
+                                                <div>
+                                                        <p class ="header_label box">Developer X Designer</p>
+                                                </div>
+                                        </div>
+
+                                        <div class="column is-one-third has-text-right menu_box">
+                                                
+                                                <div>
+                                                        <a class="menu_href" href="#about">
+                                                                <p class ="menu_text box"  id="about">About</p>
+                                                        </a>
+                                                </div>
+                                                <div>
+
+                                                        <a class="menu_href" href="#experience">
+                                                                <p class ="menu_text box "  id="experience">Experience</p>
+                                                        </a>
+                                                </div>
+                                                <div>
+
+                                                        <a class="menu_href" href="#contact">
+                                                                <p class ="menu_text box "  id="contact">Contact/Resume</p>
+                                                        </a>
+                                                </div>
+                                                <div>
+                                                        <a class="menu_href" href="#projects">
+                                                                <p class ="menu_text box no-header"  id="projects">Projects</p>
+                                                        </a>
+                                                </div>
+                                                <div class="z-bot">
+                                                        <a class="menu_href" href="art">
+                                                                <p class ="menu_text box "  id="art">Art</p>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                        
+                                </div>
+                                <div class="columns ">
+                                        <div class="column has-text-left content-box about-box  is-three-quarters-mobile background-blur " id="about-content">
+                                                <p class ="about-text" >
+                                                        Born in Vietnam, I moved to Singapore in 2015 to study under scholarships. Despite my dream of becoming an architect when I was young, 
+                                                        I developed interest in programming during my secondary school which led to my pursuit of a computer science degree in Singapore University of Technology and Design.
+                                                        I am now a Senior Data Engineer at Prudential but sometimes I still find time to do small sketches of things and people that I observe in my daily life.
+                                                </p>      
+
+                                        </div>
+
+                                        <div class="column content-box is-narrow experience-box background-blur " id="experience-content">
+
+                                                <div class="timeline ">
+                                                        <div></div>
+                                                        <div style="transform: translateX(-1.5em)" class="timeline-time">Present</div>
+                                                        <div></div>
+
+                                                        <div></div>
+                                                        <div class="timeline-middle"></div>
+                                                        <div><br></div>
+
+                                                        <div></div>
+                                                        <div></div>
+                                                        <p class ="experience-header has-text-left" >Prudential Service Singapore</p>
+
+
+                                                        <p class=" timeline-time">Apr 2023</p>
+                                                        <div class="timeline-middle">
+                                                                <div class="timeline-circle"></div>
+                                                        </div>
+                                                        <p class ="experience-subheader has-text-left" >Senior Data Engineer</p>
+
+
+                                                        <p class=" timeline-time">Oct 2021</p>
+                                                        <div class="timeline-middle">
+                                                                <div class="timeline-circle"></div>
+                                                        </div>
+                                                        <p class ="experience-subheader has-text-left" >Data Engineer</p>
+
+                                                        <p class=" timeline-time">May 2020</p>
+                                                        <div class="timeline-middle">
+                                                                <div class="timeline-circle"></div>
+                                                        </div>
+                                                        <p class ="experience-subheader has-text-left" >Data Analytics Intern</p>
+
+                                                        <div></div>
+                                                        <div></div>
+                                                        <p class ="experience-header has-text-left" >LionsBot International</p>
+
+                                                        <p class=" timeline-time">May 2019</p>
+                                                        <div class="timeline-middle">
+                                                                <div class="timeline-circle"></div>
+                                                        </div>
+                                                        <p class ="experience-subheader has-text-left" >Robotic Software Engineer Intern/ Part-time</p>
+                                                        
+                                                        <div></div>
+                                                        <div></div>
+                                                        <p class ="experience-header has-text-left" >Singapore University of Technology and Design</p>
+
+                                                        <p class=" timeline-time">May 2018</p>
+                                                        <div class="timeline-middle">
+                                                                <div class="timeline-circle"></div>
+                                                        </div>
+                                                        <p class ="experience-subheader has-text-left" >Computer Science</p>
+
+                                                </div>
+
+                                        </div>
+
+                                        
+                                        <div class="column content-box is-full is-full-mobile has-text-left background-blur hide-scroll-bar projects-content" id="projects-content">
+                                                <div class="fixed-grid projects-box has-7-cols " >
+                                                        <a class="grid is-row-gap-3.5" href="bus_widget_ap" >
+                                                                <div class="cell is-col-span-2 is-col-span-3-mobile word-break" id="cell">/fullstack/android/java</div>
+                                                                <div class="cell">Aug 2024</div>
+                                                                <div class="cell not-mobile">app</div>
+                                                                <div class="cell project-title is-col-span-3">Bus-Timing-Widget.apk</div>
+                                                        </a>
+                                                        <a class="grid is-row-gap-3.5" href="mugen_ap">
+                                                                <div class="cell is-col-span-2 is-col-span-3-mobile word-break">/ml/python/keras/React/GCP</div>
+                                                                <div class="cell">Jan 2021</div>
+                                                                <div class="cell not-mobile">app</div>
+                                                                <div class="cell project-title is-col-span-3">jazz-generation.mp3</div>
+                                                        </a>
+                                                        <a class="grid is-row-gap-3.5" href="spine_ap" >
+                                                                <div class="cell is-col-span-2 is-col-span-3-mobile word-break">/deepl/python/tensor</div>
+                                                                <div class="cell">Jun 2020</div>
+                                                                <div class="cell not-mobile">research</div>
+                                                                <div class="cell project-title is-col-span-3">Spine-segmentation-analysis.ipynb</div>
+                                                        </a>
+                                                        <a class="grid is-row-gap-3.5"  href="liberate_ap"  >
+                                                                <div class="cell is-col-span-2 is-col-span-3-mobile word-break">/AWS/python/nodejs/SQL</div>
+                                                                <div class="cell">Jan 2020</div>
+                                                                <div class="cell not-mobile">webapp</div>
+                                                                <div class="cell project-title is-col-span-3">liberate.js</div>
+                                                        </a>
+                                                        <a class="grid is-row-gap-3.5"  href="snak3d_ap" >
+                                                                <div class="cell is-col-span-2 is-col-span-3-mobile word-break">/eee/3d-print/fpga</div>
+                                                                <div class="cell">Dec 2019</div>
+                                                                <div class="cell not-mobile">game</div>
+                                                                <div class="cell project-title is-col-span-3">SNAK3D.obj</div>
+                                                        </a>
+                                                        <a class="grid is-row-gap-3.5" href="infectio_ap"  >
+                                                                <div class="cell is-col-span-2 is-col-span-3-mobile word-break">/android/Unity3D/game</div>
+                                                                <div class="cell">Nov 2019</div>
+                                                                <div class="cell not-mobile">game</div>
+                                                                <div class="cell project-title is-col-span-3">Infectio.apk</div>
+                                                        </a>
+                                                        <a class="grid is-row-gap-3.5" href="blink_ap"  >
+                                                                <div class="cell is-col-span-2 is-col-span-3-mobile word-break">/android/computer-vision/java</div>
+                                                                <div class="cell">Aug 2019</div>
+                                                                <div class="cell not-mobile">game</div>
+                                                                <div class="cell project-title is-col-span-3">Blink.apk</div>
+                                                        </a>
+                                                        <a class="grid is-row-gap-3.5" href="urop_ap"   >
+                                                                <div class="cell is-col-span-2 is-col-span-3-mobile word-break">/eee/3d-print/ardruino</div>
+                                                                <div class="cell">May 2019</div>
+                                                                <div class="cell not-mobile">robotic</div>
+                                                                <div class="cell project-title is-col-span-3">under-water-bio-robot.txt</div>
+                                                        </a>
+                                                        <a class="grid is-row-gap-3.5" href="astar_ap">
+                                                                <div class="cell is-col-span-2 is-col-span-3-mobile word-break">/eee/3d-print/ardruino</div>
+                                                                <div class="cell">Dec 2017</div>
+                                                                <div class="cell not-mobile">research</div>
+                                                                <div class="cell project-title is-col-span-3">rehab.exe</div>
+                                                        </a>
+                                                        </div>
+                                                </div>
+
+                                                
+                                        </div>
+
+                                        
+                                        <div class="column has-text-center contact-box content-box  is-full is-full-mobile" id="contact-content">
+                                                <div class =" contact-primary ">
+                                                        <!-- <a href="mailto:victorpham1997@gmail.com"  ><i class="fas fa-at"></i>
+                                                                victorpham1997@gmail.com
+                                                        </a> -->
+
+                                                        <a href="https://docs.google.com/document/d/1TRCigyv9hfBRg-oTahazPn7CC_vGa6Ha1GUT9M0CuW0/edit?usp=sharing" target="_blank" class="inline-block background-solid " download>
+                                                                <span class="icon">
+                                                                  <i class="fas fa-file-alt"></i>
+                                                                </span>
+                                                                <span>Resume</span>
+                                                        </a>
+                                                        &emsp;&emsp;
+                                                        <a href="https://docs.google.com/document/d/1lGxZLkCp6hxBMPC1ZyHNgW5bz8DWkJ0PcTuL2MXaNCs/edit?usp=sharing" target="_blank" class="inline-block background-solid " download>
+                                                                <span class="icon">
+                                                                  <i class="fas fa-file-alt"></i>
+                                                                </span>
+                                                                <span>履歴書</span>
+                                                        </a>  
+                                                </div>      
+
+                                                <div class =" contact-secondary-left background-blur has-text-left ">
+                                                        <a href="https://medium.com/@victorpham1997" target="_blank" class=" ">
+                                                                <i class="fab fa-medium-m"></i> Medium
+                                                        </a>
+                                                        <a href="https://github.com/victorpham1997" target="_blank" class="">
+                                                                <i class="fab fa-github"></i> Github
+                                                        </a>
+                                                        <a href="https://www.linkedin.com/in/trung-viet-pham/" target="_blank" class="">
+                                                                <i class="fab fa-linkedin"></i> LinkedIn
+                                                        </a>
+                                                      
+                                                        <a href="mailto:victorpham1997@gmail.com" class="mobile" ><i class="fas fa-envelope "></i>
+                                                                victorpham1997@gmail.com
+                                                        </a>
+                                                
+                                                </div> 
+                                                
+                                                <div class =" contact-secondary-right background-blur not-mobile ">
+                                                        <a href="mailto:victorpham1997@gmail.com"  ><i class="fas fa-envelope "></i>
+                                                                victorpham1997@gmail.com
+                                                        </a>
+                                                </div> 
+
+                                        </div>
+
+                                        <!-- <div class="column has-text-left content-box is-one-third is-three-quarters-mobile" id="art-content">
+                                                <p class ="about-text ">
+                                                        
+                                                </p>      
+
+                                        </div> -->
+                                </div>
+                        </div>
                 </div>
-                <div class="column is-4">
-                  <h3 class="subtitle is-5">FRAMEWORKS & OS</h3>
-                  <div class="tag is-medium is-outlined">Microsoft Azure</div>
-                  <div class="tag is-medium is-outlined">Terraform</div>
-                  <div class="tag is-medium is-outlined">Tensorflow</div>
-                  <div class="tag is-medium is-outlined">Keras</div>
-                  <div class="tag is-medium is-outlined">MySQL</div>
-                  <div class="tag is-medium is-outlined">Linux OS</div>
-                  <div class="tag is-medium is-outlined">Arduino</div>
-                </div>  
-                <div class="column is-4">
-                  <h3 class="subtitle is-5">OTHERS</h3>
-                  <div class="tag is-medium is-outlined">Adobe Photoshop</div>
-                  <div class="tag is-medium is-outlined">Microsoft PowerBI</div>
-                  <div class="tag is-medium is-outlined">3D Printing</div>
-                </div>                
-              </div>               
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+                <!-- <div class="container centered-box">
+                        <div class="box">
+                                <h1 class="title">Centered Box</h1>
+                                <p>This box is perfectly centered in the middle of the screen!</p>
+                        </div>
+                </div> -->
 
-  <!-- Resume -->
-  <section class="section" id="resume">
-    <br><br>
-    <div class="section-heading has-text-centered">
-      <h3 class="title is-2">Resume</h3>
-      <h4 class="subtitle is-5">More about my experiences</h4>
-      <br>
-      <div class="columns is-4 is-centered">
-        <a href="https://docs.google.com/document/d/1TRCigyv9hfBRg-oTahazPn7CC_vGa6Ha1GUT9M0CuW0/edit?usp=sharing" target="_blank" class="button is-link is-medium" download>
-          <span class="icon">
-            <i class="fas fa-file-alt"></i>
-          </span>
-          <span>Resume</span>
-        </a>
-        <h3 class="column is-1"></h3>
-
-        <a href="https://docs.google.com/document/d/1lGxZLkCp6hxBMPC1ZyHNgW5bz8DWkJ0PcTuL2MXaNCs/edit?usp=sharing" target="_blank" class="button is-link is-medium" download>
-          <span class="icon">
-            <i class="fas fa-file-alt"></i>
-          </span>
-          <span>履歴書</span>
-        </a>    
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <!-- Academic Project-->
-  <section class="section" id="acad_proj">
-    <br>
-    <div class="container">
-      <div class="section-heading has-text-centered">
-        <h3 class="title is-2">Technical Projects</h3>
-        <h4 class="subtitle is-5">My latest works</h4>
-      </div>
-      <br>
-      <div class="container portfolio-container">
-        <div class="columns">
-          <div class="column is-4">
-            <!-- SG Bus Timing Widget-->
-            <a id="mugen_img" class="darken acad_proj" href="bus_widget_ap">
-              <img class="img" src="images/acad_proj/bus_widget/thumbnails/tn_bus_widget.png" alt="bus_widget picture">
-              <p class="text-on-top" id="bus_widget_text">Find out<br>more</p>
-            </a>
-            <p class="has-text-centered">
-              <span class="title is-5"><br>SG Bus Timing Widget</span>
-              <span class="subtitle is-6"><br>Handy Android bus arrival widget.<br><br></span>
-            </p>
-
-            <!-- Jazz Generation Project -->
-            <a id="mugen_img" class="darken acad_proj" href="mugen_ap">
-              <img class="img" src="images/acad_proj/mugen/thumbnails/tn_mugen.jpg" alt="Mugen picture">
-              <p class="text-on-top" id="mugen_text">Find out<br>more</p>
-            </a>
-            <p class="has-text-centered">
-              <span class="title is-5"><br>Jazz Generation Project</span>
-              <span class="subtitle is-6"><br>Generating endless Jazz using GPT<br><br></span>
-            </p>
-
-            <!-- Infectio -->
-            <a id="infectio_img" class="darken acad_proj" href="infectio_ap">
-              <img class="img" src="images/acad_proj/infectio/thumbnails/tn_infectio.jpg" alt="Infectio picture">
-              <p class="text-on-top" id="infectio_img">Find out<br>more</p>
-            </a>
-            <p class="has-text-centered">
-              <span class="title is-5"><br>Infectio</span>
-              <span class="subtitle is-6"><br>Top-down Gun and Run Game</span>
-            </p>
-
-
-          </div>
-          <div class="column is-4">
-            <!-- Spine segmentation -->
-            <a id="spine_img" class="darken acad_proj" href="spine_ap">
-              <img class="img" src="images/acad_proj/spine/thumbnails/tn_spine.jpg" alt="Spine picture">
-              <p class="text-on-top" id="spine_img">Find out<br>more</p>
-            </a>
-            <p class="has-text-centered">
-              <span class="title is-5"><br>Spine segmentation and analysis</span>
-              <span class="subtitle is-6"><br>Deep learning pipeline for spine analysis<br><br></span>
-            </p>
-            <!-- BLink Android App -->
-            <a id="blink_img" class="darken acad_proj" href="blink_ap">
-              <img class="img" src="images/acad_proj/blink/thumbnails/tn_blink.jpg" alt="Blink picture">
-              <p class="text-on-top" id="blink_text">Find out<br>more</p>
-            </a>
-            <p class="has-text-centered">
-              <span class="title is-5"><br>BLink Android App</span>
-              <span class="subtitle is-6"><br>An App to Link<br><br></span>
-            </p>
-
-            
-            
-            <!-- ASTAR Proj -->
-            <a id="astar_img" class="darken acad_proj" href="astar_ap">
-              <img class="img" src="images/acad_proj/astar/thumbnails/tn_astar.jpg" alt="Urop picture">
-              <p class="text-on-top" id="astar_text">Find out<br>more</p>
-            </a>
-            <p class="has-text-centered">
-              <span class="title is-5"><br>Rehabilitation Game for Physically Impared Patients</span>
-              <span class="subtitle is-6"><br>A fun experience to help patients rehabilitate</span>
-            </p>
-            
-          </div>
-          <div class="column is-4">
-            <!-- Liberate -->
-            <a id="liberate_img" class="darken acad_proj" href="liberate_ap">
-              <img class="img" src="images/acad_proj/liberate/thumbnails/tn_liberate.jpg" alt="Liberate picture">
-              <p class="text-on-top" id="liberate_img">Find out<br>more</p>
-            </a>
-            <p class="has-text-centered">
-              <span class="title is-5"><br>Liberate</span>
-              <span class="subtitle is-6"><br>An automated fullstack library Web App</span>
-            </p>
-
-            
-            <br>
-
-            <!-- Snak3D -->
-            <a id="snaked_img" class="darken acad_proj" href="snak3d_ap">
-              <img class="img" src="images/acad_proj/snak3d/thumbnails/tn_snak3d.jpg" alt="Snak3D picture">
-              <p class="text-on-top" id="snaked_text">Find out<br>more</p>
-            </a>
-            <p class="has-text-centered">
-              <span class="title is-5"><br>Snak3D</span>
-              <span class="subtitle is-6"><br>An arcade 3D Snake Game Machine</span>
-            </p>
-
-            <br>
-
-            <!-- UROP Proj -->
-            <a id="urop_img" class="darken acad_proj" href="urop_ap">
-              <img class="img" src="images/acad_proj/urop/thumbnails/tn_urop.jpg" alt="Urop picture">
-              <p class="text-on-top" id="urop_text">Find out<br>more</p>
-            </a>
-            <p class="has-text-centered">
-              <span class="title is-5"><br>Underwater Bio-inspired Mobile Robot</span>
-              <span class="subtitle is-6"><br>A stingray robot with soft material fins that can travel underwater</span>
-            </p>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Art Projects-->
-  <section class="section" id="art_proj">
-    <br><br>
-    <div class="container">
-      <div class="section-heading has-text-centered">
-        <h3 class="title is-2">Art Projects</h3>
-        <h4 class="subtitle is-5">I also love to create art during my free time</h4>
-      </div>
-      <br>
-      <div class="container portfolio-container">
-        <div class="columns">
-          <!-- Archie sketches -->
-          <div class="column is-half art_pad">
-            <a id="as" class="thumbnail" href="art_proj">
-              <img class="img tn" src="images/artworks/architecture_sketches/thumbnails/as_tn01.jpg" alt="as_tn01 picture">
-              <img class="img tn_under" src="images/artworks/architecture_sketches/thumbnails/as_tn02.jpg" alt="as_tn01 picture">
-              <img class="img tn_under_under" src="images/artworks/architecture_sketches/thumbnails/as_tn03.jpg" alt="as_tn01 picture">
-              <p class="tn_text-on-top" id="blink_text">View<br>Gallery</p>
-            </a>
-            <p class="has-text-centered">
-              <span class="title is-5"><br>Architecture Sketches</span>
-              <span class="subtitle is-6"><br>Studies of well known Contemporary Architectures<br><br></span>
-            </p>
-          <!-- Human sketches -->
-            <a id="as" class="thumbnail" href="art_proj">
-              <img class="img tn" src="images/artworks/human_sketches/thumbnails/hs_tn02.jpg" alt="hs_tn02 picture">
-              <img class="img tn_under" src="images/artworks/human_sketches/thumbnails/hs_tn01.jpg" alt="hs_tn01 picture">
-              <img class="img tn_under_under" src="images/artworks/human_sketches/thumbnails/hs_tn03.jpg" alt="as_tn01 picture">
-              <p class="tn_text-on-top" id="blink_text">View<br>Gallery</p>
-            </a>
-            <p class="has-text-centered">
-              <span class="title is-5"><br>Human Sketches</span>
-              <span class="subtitle is-6"><br>Sketches of people<br><br></span>
-            </p>
-          </div>
-          <!-- Field sketches -->
-          <div class="column is-half art_pad">
-            <a id="as" class="thumbnail" href="art_proj">
-              <img class="img tn" src="images/artworks/field_sketches/thumbnails/fs_tn01.jpg" alt="as_tn01 picture">
-              <img class="img tn_under" src="images/artworks/field_sketches/thumbnails/fs_tn02.jpg" alt="as_tn01 picture">
-              <img class="img tn_under_under" src="images/artworks/field_sketches/thumbnails/fs_tn03.jpg" alt="as_tn01 picture">
-              <p class="tn_text-on-top" id="blink_text">View<br>Gallery</p>
-            </a>
-            <p class="has-text-centered">
-              <span class="title is-5"><br>Field Sketches</span>
-              <span class="subtitle is-6"><br>Drawings of sceneries from observation<br><br></span>
-            </p>
-          <!-- Other sketches -->
-            <a id="as" class="thumbnail" href="art_proj">
-              <img class="img tn" src="images/artworks/others/thumbnails/ot_tn04.jpg" alt="as_tn01 picture">
-              <img class="img tn_under" src="images/artworks/others/thumbnails/ot_tn02.jpg" alt="as_tn01 picture">
-              <img class="img tn_under_under" src="images/artworks/others/thumbnails/ot_tn03.jpg" alt="as_tn01 picture">
-              <p class="tn_text-on-top" id="blink_text">View<br>Gallery</p>
-            </a>
-            <p class="has-text-centered">
-              <span class="title is-5"><br>Others</span>
-              <span class="subtitle is-6"><br>Older works<br><br></span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Achievement Level -->
-  <!-- <section class="section">
-    <nav class="level">
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Tweets</p>
-          <p class="title">3,456</p>
-        </div>
-      </div>
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Following</p>
-          <p class="title">123</p>
-        </div>
-      </div>
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Followers</p>
-          <p class="title">456K</p>
-        </div>
-      </div>
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Likes</p>
-          <p class="title">789</p>
-        </div>
-      </div>
-    </nav>
-  </section> -->
-
-
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <br><br>
-    <div class="container">
-      <div class="section-heading has-text-centered">
-        <h3 class="title is-2">Contact</h3>
-        <h4 class="subtitle is-5">Get in touch through Formspree</h4>
-      </div>
-      <br>
-
-      <div class="columns">
-        <div class="column is-6 is-offset-3">
-          <form method="POST" action="https://formspree.io/f/xbjewply" class="box" action="#" id="form" method="post" name="form" target="_blank">
-            <div class="field">
-              <label class="label" for="full-name">Full Name</label>
-              <div class="control">
-                <input id="full-name"  value="" class="input" type="text" name="name" placeholder="Your Full Name" required="">
-              </div>
-            </div>
-
-            <div class="field">
-              <label class="label" for="email-address">Email</label>
-              <div class="control has-icons-left">
-                <input name="_replyto" id="email-address" class="input" type="email" placeholder="Your email" value="" required="">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
-                </span>
-              </div>
-            </div>
-
-            <div class="field">
-              <label class="label" for="message">Message</label>
-              <div class="control">
-                <textarea  name="message" id="message" class="textarea"  placeholder="Message"  required=""></textarea>
-              </div>
-            </div>
-
-            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-
-            <div class="field is-grouped has-text-centered">
-              <button  type="submit"class="button is-link is-large" ><span class="icon">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                <span>Submit</span></button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="section-heading has-text-centered">
-      <p class="is-white">
-        <strong class="is-white">Portfolio Website created by Pham Trung Viet</strong><br>
-        <strong class="is-white">Bulma Personal Template</strong> by <a href="https://mubaidr.js.org">Muhammad Ubaid Raza</a>. The source code is licensed by
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
-      </p>
-    </div>
-  </footer>
-</body>
-
-
-
+	</body>
 </html>

@@ -1,172 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Viet Pham</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <!-- Bulma Version 0.8.x-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">        
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+        <script async type="text/javascript" src="../assets/js/email.js"></script>
+        <!-- <script async type="text/javascript" src="assets/js/main.js"></script> -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Infectio</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-  <!-- Bulma Version 0.8.x-->
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-  <link rel="stylesheet" type="text/css" href="../assets/css/acad_proj_style.css">
-  <script async type="text/javascript" src="../assets/js/bulma.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBQLD161PL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Google tag (gtag.js) -->
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBQLD161PL"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-    gtag('config', 'G-ZBQLD161PL');
-  </script>
-</head>
+                gtag('config', 'G-ZBQLD161PL'); -->
+                <!-- Load three.js -->
 
-<body>
-  <!-- Navigation bar -->
-  <nav class="navbar is-fixed-top">
-    <div class="navbar-brand">
-      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-        <span class="is-white"></span>
-        <span class="is-white"></span>
-        <span class="is-white"></span>
-      </div>
-    </div>
-    <div id="navbarExampleTransparentExample" class="navbar-menu">
-      <div class="navbar-end">
-        <a class="navbar-item" href="/#home">
-          <span class="icon">
-            <i class="fas fa-home"></i>
-          </span>
-          <span>Home</span>
-        </a>
-        <a class="navbar-item" href="/#about">
-          <span class="icon">
-            <i class="fas fa-info"></i>
-          </span>
-          <span>About Me</span>
-        </a>
-        <a class="navbar-item" href="/#resume">
-          <span class="icon">
-            <i class="fas fa-file-alt"></i>
-          </span>
-          <span>Resume</span>
-        </a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <div class="navbar-dropdown is-boxed ">
-            <a class="navbar-item is-2 is-black tat" href="/#acad_proj">
-              Academic Projects
-            </a>
-            <a class="navbar-item is-2 is-black tat" href="/#art_proj">
-              Art Projects
-            </a>
-          </div>
-          <div class="navbar-link is-white">
-            <span class="icon ">
-              <i class="fas fa-th-list "></i>
-            </span>
-            <span class="tiss">Projects</span>
-          </div>
-            
-        </div>
-        <a class="navbar-item" href="/#contact">
-          <span class="icon">
-            <i class="fas fa-envelope"></i>
-          </span>
-          <span>Contact</span>
-        </a>
-      </div>
-    </div>
-  </nav>
-  <!-- Header -->
-<!--   <section class="hero">
-    <div class="hero-body">
-      <div class="backgn-container">
-        <img class="backgn-img"  src="../images/acad_proj/snak3d/test.jpg">
-      </div>
-      <div class="columns is-centered">
-        
-        <img  src="../images/Blink.jpg" class="column is-5 main-img">
-        
-      </div>
-    </div>
-  </section> -->
-  <!-- Main Section -->
+        </head>
 
+	<body>
+        <!-- <canvas id="three_background" myattr="myattr"></canvas> -->
+                <script type="module" src="../assets/js/three_background.js"></script>
 
-  <img style="margin-top: 2rem" src="../images/acad_proj/infectio/main_screen.jpg">
-  <section style="margin-top: 0" class="section">
-    <div class="columns">
-      <div class="column is-10 is-offset-1">
-        <p class="title header-size">Infectio</p>
-        <p class="subtitle is-3">
-          A top-down Run and Gun game that ages a bit too well...
-          <br>
-          <span class="tag is-size-6 is-primary">Unity 3D</span>
-          <span class="tag is-size-6 is-primary">C#</span>
-        </p>
-        <p class="subtitle is-4 is-size-5">
-          <strong class="subtitle is-3">About the Project:</strong>
-          <br>
-          The game is in the form of top down shooter in the run and gun style. You play as a heroic defender of the body's immune system, using various form of medical and bionic weapons ( such as first aid, antibiotic, antiviral, etc) to defeat the bacteria and virus that is invading the body.
-        </p>  
-        <div class="column is-12 has-text-centered" >
-        <video controls>
-          <source  src="../images/acad_proj/infectio/infectio_gameplay.mp4" type="">
-            Your browser does not support HTML5 video.
-        </video>
-        <p>Infectio Gameplay Demo on Android device.<br>The demo showcases different weapons available in game</p>
-        </div>
-        <p class="subtitle is-4 is-size-5">
-          <strong class="subtitle is-size-5">Game features:</strong>
-          <li class="is-size-5">
-            Multiple enemy and boss system. Enemy scales accordingly to the game level progress. Each enemy has weakness to specific weapons
-          </li>
-          <li class="is-size-5">
-            Multiple weapons available that can be upgraded to become stronger or gain extra ability.
-          </li>
-          <li class="is-size-5">
-            Zone machenism that gives player regen skill or extra movement speed.
-          </li>
-          <li class="is-size-5">
-            Dynamic camera that makes the gameplay more exciting and satsifying.
-          </li>
-          <br>
-          <p class="is-size-5">
-            This project was made for <strong>50.003 Elements of Software Construction</strong> course together with 4 more members.
-          </p>
-          
-        </p> 
-        
-      </div>
+                <div id="container" >
+                        <div class="cr_box shadow">
+                                <i class="fa fa-copyright"  aria-hidden="true"></i> Pham Trung Viet
+                        </div>
+                        <div class="option_box">
 
-    </div>
+                                <div class="btn" id="theme_dark" >
+                                        <div class="btn_text shadow">Dark</div>
+                                        <div class="btn_box"></div>
+                                        <div class="btn_text shadow">Light</div>
+                                </div>
 
-    <div class="columns">
-      <div class="column is-5 is-offset-1 has-text-centered">
-        <img src="../images/acad_proj/infectio/enemy.jpg">
-        <p>Enemy and Boss</p>
-      </div>
-      <div class="column is-5  has-text-centered" >
-        <img src="../images/acad_proj/infectio/shop.jpg">
-        <p>Ingame Shop</p>
-      </div>
-    </div>
+                        </div>
 
-    <div class="columns is-mobile">
-      <div class="column is-3">
-        <!-- <button class="button is-success">Previous Project</button> -->
-        <a href="/liberate_ap" class="button is-success">Previous Project</a>
-      </div>
-      <div class="column is-3 is-offset-6" align="right">
-        <a href="/blink_ap" class="button is-success">Next Project</a>
-      </div>
-      
-    </div>
-  </section>
+                        <div class="nav_box">
+                          <a class="shadow-thick" href="/#projects">
+                            <i class="fa fa-angle-right"></i> PROJECTS
+                          </a>
+                        </div>
 
+                        <div id="frame">
+                          <section  class="section project-detail-box has-text-left hide-scroll-bar background-blur">
+                            <div class="columns">
+                              <div class="column is-10 is-offset-1">
+                                <p class="project-detail-title">Infectio</p>
+                                <p class="project-detail-subtitle is-3">
+                                  A top-down Run and Gun game that ages a bit too well...
+                                  <br>
+                                  <span class="tag is-size-6 is-primary">Unity 3D</span>
+                                  <span class="tag is-size-6 is-primary">C#</span>
+                                </p>
+                                <p class="project-detail-body is-4 is-size-5">
+                                  <strong class="project-detail-subtitle is-3">About the Project:</strong>
+                                  <br>
+                                  The game is in the form of top down shooter in the run and gun style. You play as a heroic defender of the body's immune system, using various form of medical and bionic weapons ( such as first aid, antibiotic, antiviral, etc) to defeat the bacteria and virus that is invading the body.
+                                </p>  
+                              </div>
+                            </div>
 
-</body>
+                            <div class="columns">
+                                <div class="column is-5 is-offset-1 has-text-centered" >
+                                  <img src="../images/acad_proj/infectio/main_screen.jpg">
+                                  <p>Game Title Screen</p>
+                                  <br>
+                                  <video controls >
+                                    <source  src="../images/acad_proj/infectio/infectio_gameplay.mp4" type="">
+                                      Your browser does not support HTML5 video.
+                                  </video>
+                                  <p>Infectio Gameplay Demo on Android device.<br>The demo showcases different weapons available in game</p>
+                                </div>
+                                <div class="column is-5 has-text-left" >
+                                  <p class="project-detail-subtitle is-4 is-size-5">
+                                    <strong class="project-detail-subtitle is-size-5">Game features:</strong>
+                                    <li class="is-size-5">
+                                      Multiple enemy and boss system. Enemy scales accordingly to the game level progress. Each enemy has weakness to specific weapons
+                                    </li>
+                                    <li class="is-size-5">
+                                      Multiple weapons available that can be upgraded to become stronger or gain extra ability.
+                                    </li>
+                                    <li class="is-size-5">
+                                      Zone machenism that gives player regen skill or extra movement speed.
+                                    </li>
+                                    <li class="is-size-5">
+                                      Dynamic camera that makes the gameplay more exciting and satsifying.
+                                    </li>
+                                    <br>
+                                    <p class="is-size-5">
+                                      This project was made for <strong>50.003 Elements of Software Construction</strong> course together with 4 more members.
+                                    </p>
+                                    
+                                  </p> 
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="columns">
+                              <div class="column is-5 is-offset-1 has-text-centered">
+                                <img src="../images/acad_proj/infectio/enemy.jpg">
+                                <p>Enemy and Boss</p>
+                              </div>
+                              <div class="column is-5  has-text-centered" >
+                                <img src="../images/acad_proj/infectio/shop.jpg">
+                                <p>Ingame Shop</p>
+                              </div>
+                            </div>
+                        
+                            <!-- <div class="columns is-mobile">
+                              <div class="column is-3">
+                                <a href="/liberate_ap" class="button is-success">Previous Project</a>
+                              </div>
+                              <div class="column is-3 is-offset-6" align="right">
+                                <a href="/blink_ap" class="button is-success">Next Project</a>
+                              </div> -->
+                              
+                            </div>
+                          </section>
+                                
+                        </div>
+                </div>
+
+                <!-- <div class="container centered-box">
+                        <div class="box">
+                                <h1 class="title">Centered Box</h1>
+                                <p>This box is perfectly centered in the middle of the screen!</p>
+                        </div>
+                </div> -->
+
+	</body>
+</html>

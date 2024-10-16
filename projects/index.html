@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Viet Pham</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <!-- Bulma Version 0.8.x-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">        
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+        <script async type="text/javascript" src="../assets/js/email.js"></script>
+        <script async type="text/javascript" src="../assets/js/bulma.js"></script>
+        <!-- <script async type="text/javascript" src="../assets/js/main.js"></script> -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Google tag (gtag.js) -->
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBQLD161PL"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-ZBQLD161PL'); -->
+                <!-- Load three.js -->
+
+        </head>
+
+	<body>
+        <!-- <canvas id="three_background" myattr="myattr"></canvas> -->
+                <script type="module" src="../assets/js/three_background.js"></script>
+
+                <div id="container" >
+                        <div class="option_box hide">
+                                <div class="btn" id="theme_dark" >
+                                        <div class="btn_text shadow">Dark</div>
+                                        <div class="btn_box"></div>
+                                        <div class="btn_text shadow">Light</div>
+                                </div>
+
+                        </div>
+
+                        <div id="frame" class="projects">
+                                <div class="columns is-mobile">
+                                        <div class="column has-text-left is-mobile ">
+                                                <a class="page_nav" href="/">
+                                                        Home
+                                                </a>
+                                        </div>
+
+                                        <div class="column has-text-center is-mobile ">
+                                                <p class="page_title shadow-xthick">
+                                                        Projects
+                                                </p>
+                                        </div>
+
+                                        <div class="column has-text-right is-mobile">
+                                                <p class="page_nav">
+                                                        Art
+                                                </p>
+                                        </div>
+                                </div>
+                                <div class="columns projects-container ">
+                                        <div class="column is-4 ">
+                                                <!-- SG Bus Timing Widget-->
+                                                <a id="mugen_img" class=" " href="bus_widget_ap">
+                                                        <img class="project-img-1" src="../images/acad_proj/bus_widget/thumbnails/tn_bus_widget.png" alt="bus_widget picture">
+                                                        <p class="text-on-top" id="bus_widget_text">Find out<br>more</p>
+                                                </a>
+                                                <p class="has-text-centered">
+                                                        <span class="title is-5"><br>SG Bus Timing Widget</span>
+                                                        <span class="subtitle is-6"><br>Handy Android bus arrival widget.<br><br></span>
+                                                </p>
+
+                                                <!-- Jazz Generation Project -->
+                                                <a id="mugen_img" class="" href="mugen_ap">
+                                                        <img class="project-img-2" src="../images/acad_proj/mugen/thumbnails/tn_mugen.jpg" alt="Mugen picture">
+                                                        <p class="text-on-top" id="mugen_text">Find out<br>more</p>
+                                                </a>
+                                                <p class="has-text-centered">
+                                                        <span class="title is-5"><br>Jazz Generation Project</span>
+                                                        <span class="subtitle is-6"><br>Generating endless Jazz using GPT<br><br></span>
+                                                </p>
+
+                                                <!-- Infectio -->
+                                                <a id="infectio_img" class="" href="infectio_ap">
+                                                        <img class="img" src="../images/acad_proj/infectio/thumbnails/tn_infectio.jpg" alt="Infectio picture">
+                                                        <p class="text-on-top" id="infectio_img">Find out<br>more</p>
+                                                </a>
+                                                <p class="has-text-centered">
+                                                        <span class="title is-5"><br>Infectio</span>
+                                                        <span class="subtitle is-6"><br>Top-down Gun and Run Game</span>
+                                                </p>
+
+
+                                        </div>
+
+                                        <div class="column is-4">
+                                                <a id="mugen_img" class=" acad_proj" href="bus_widget_ap">
+                                                        <img class="img" src="../images/acad_proj/bus_widget/thumbnails/tn_bus_widget.png" alt="bus_widget picture">
+                                                        <p class="text-on-top" id="bus_widget_text">Find out<br>more</p>
+                                                </a>
+                                                <p class="has-text-centered">
+                                                        <span class="title is-5"><br>SG Bus Timing Widget</span>
+                                                        <span class="subtitle is-6"><br>Handy Android bus arrival widget.<br><br></span>
+                                                </p>
+
+                                                
+                                        </div>
+
+                                        <div class="column is-4">
+                                                <a id="mugen_img" class=" acad_proj" href="bus_widget_ap">
+                                                        <img class="img" src="../images/acad_proj/bus_widget/thumbnails/tn_bus_widget.png" alt="bus_widget picture">
+                                                        <p class="text-on-top" id="bus_widget_text">Find out<br>more</p>
+                                                </a>
+                                                <p class="has-text-centered">
+                                                        <span class="title is-5"><br>SG Bus Timing Widget</span>
+                                                        <span class="subtitle is-6"><br>Handy Android bus arrival widget.<br><br></span>
+                                                </p>
+                                        </div>
+                                                
+                                </div>
+
+
+                                <!-- <a class="column is-full" href="https://threejs.org" target="_blank" rel="noopener">three.js</a> -->
+
+                        </div>
+                </div>
+
+                <!-- <div class="container centered-box">
+                        <div class="box">
+                                <h1 class="title">Centered Box</h1>
+                                <p>This box is perfectly centered in the middle of the screen!</p>
+                        </div>
+                </div> -->
+
+	</body>
+</html>
