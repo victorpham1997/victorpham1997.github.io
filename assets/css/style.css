@@ -388,7 +388,7 @@ div.nav_box {
 /* Experience */
 
 .experience-header{
-  font-size: 1.5em ;
+  font-size: max(1.75vw, 3.5vh);
   font-weight: 300;
   position: relative;
   left: -2.5%;
@@ -396,19 +396,18 @@ div.nav_box {
 
 
 .experience-subheader{
-  font-size: 1em ;
   padding: 1rem 1.75rem ;
   margin: auto;
   width: 100%;
   font-family: "Hanken Grotesk", sans-serif;
   font-weight: 350;
-
 }
 
 .timeline {
   display: grid;
-  grid-template-columns: 7em 3px auto;
-  width: fit-content;
+  grid-template-columns: max(7vw, 14vh) 3px auto;
+  max-width: 100%;
+  /* width: fit-content; */
   flex-direction: row;
   font-family: "Raleway", sans-serif;
   color: var(--font-color);
@@ -422,6 +421,7 @@ div.nav_box {
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
   mask-position: top;
+  font-size: max(1vw, 2vh);
 
 }
 
@@ -437,11 +437,11 @@ div.nav_box {
   justify-content: left;
   line-height: 1.75em;
   width: 100%;
+
 }
 
 .timeline-time {
   /* padding: 1.75rem; */
-  font-size: 1em;
   font-family: "Hanken Grotesk", sans-serif;
   font-weight: 300;
   margin: auto;
@@ -499,6 +499,8 @@ div.nav_box {
   max-width: fit-content;
   overflow: auto;
   z-index: -99;
+  mask-image: linear-gradient(180deg,  rgba(0,0,0,1) 95%, rgba(0,0,0,0.15) 100%);
+
 }
 
 .grid:hover {
@@ -515,16 +517,23 @@ div.nav_box {
 
 .project-title {
   font-family: "Raleway", sans-serif;
-  font-size: max(30px, 4vw);
+  font-size: min(max(30px, 4vw), 60px);
   font-weight: 100;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+
   /* color: var(--project-title-color); */
+}
+
+.project-title:hover {
+  font-weight: 300;
+  text-shadow: 0 0 8px var(--font-color);
 }
 
 .project-subtitle {
   font-family: "Raleway", sans-serif;
-  font-size: max(10px, 1.5vw);
+  font-size: min(max(10px, 1vw), 30px);
   font-weight: 500;
-  /* color: var(--project-title-color); */
 }
 
 @keyframes blinker {

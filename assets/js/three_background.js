@@ -469,9 +469,9 @@ function animate(timeStep) {
     
     // stats.update();
     if (timeStep > i*500){
-        r0 = randomRGB(0.5, r0);
-        g0 = randomRGB(0.5, g0);
-        b0 = randomRGB(0.5, b0);
+        r0 = randomRGB(0.1, r0);
+        g0 = randomRGB(0.1, g0);
+        b0 = randomRGB(0.1, b0);
         effect.domElement.style.color = `rgb(${r0}, ${g0}, ${b0})`;
         // console.log(`rgb(${r0}, ${g0}, ${b0})`)
         i++;
