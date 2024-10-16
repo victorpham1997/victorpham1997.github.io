@@ -26,7 +26,7 @@ if (darkTheme==null){
 }
 
 //asign version
-const version = 'v2.0.3'
+const version = 'v2.0.4'
 var versionText = document.querySelector('.version');
 versionText.textContent  = version;
 
