@@ -85,7 +85,6 @@ strong {
 
   .content-box#projects-content {
     max-height: 65% !important;
-    backdrop-filter: var(--blur);
   }
 /*   div.banner .is-white{
   color: black !important;
@@ -112,7 +111,7 @@ strong {
     --title-font-weight: 400;
    }
 
-   .content-box {
+   .about-box {
     margin-left: 10% !important;
    }
 
@@ -521,10 +520,9 @@ div.nav_box {
 .project-title {
   font-family: "Raleway", sans-serif;
   font-size: min(max(30px, 4vw), 60px);
-  font-weight: 100;
+  font-weight: 200;
   display: inline-block;
   transition: all 0.2s ease-in-out;
-
   /* color: var(--project-title-color); */
 }
 
@@ -537,6 +535,12 @@ div.nav_box {
   font-family: "Raleway", sans-serif;
   font-size: min(max(10px, 1vw), 30px);
   font-weight: 500;
+  display: inline-block;
+}
+.project-subtitle2 {
+  font-family: "Raleway", sans-serif;
+  font-size: min(max(12px, 1.2vw), 33px);
+  font-weight: 600;
 }
 
 @keyframes blinker {
@@ -553,6 +557,7 @@ div.nav_box {
   position: absolute;
   margin: 0;
   top: 0;
+  left: 0;
   font-size: 1.25rem;
 }
 
@@ -619,7 +624,6 @@ div.nav_box {
 
 .project-detail-title {
   font-size: 4.25em;
-
 }
 
 .project-detail-subtitle {

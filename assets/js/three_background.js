@@ -64,7 +64,6 @@ let point = {
 };
 let theme;
 
-
 // ascii properties
 const rbgThreshold = 255;
 let ascii_set = ' .:/\\@#'
