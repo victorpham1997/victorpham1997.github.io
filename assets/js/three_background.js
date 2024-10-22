@@ -415,11 +415,14 @@ function toggleTab(selectedTab) {
 var tabs = document.querySelectorAll(".menu_text");
 const text_animation_duration = 0.07
 const active_id = location.hash.replace("#", "");
-
+// if (active_id=='acad_proj'){
+//     active_id = 'projects';
+// }
 // Init active tab
 if(active_id) {
     tabs.forEach(function(tab) {
         if (tab.id == active_id ) {
+            console.log(tab.id);
             tab.classList.add("is-active");
             gsap.to(`#${tab.id}-content`, {duration: 1, display: 'block', opacity: 1});
             controlHeaderVis(tab);
