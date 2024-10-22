@@ -83,7 +83,7 @@ strong {
     font-size: 1.5rem !important;
   }
 
-  .content-box#projects-content {
+  .content-box.projects-content {
     max-height: 65% !important;
   }
 /*   div.banner .is-white{
@@ -495,7 +495,7 @@ div.nav_box {
   word-break: break-all;
 }
 
-.content-box#projects-content {
+.content-box.projects-content {
   margin-left: 1%;
   margin-bottom: 0;
   padding: 0% 4% ;
