@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Orbitron:wght@400..900&display=swap');
 
 
 :root {
@@ -11,7 +12,7 @@
   --pad: max(20px, 5vmin);
   --marg-left: 30px;
   --marg-top: 0.35em;
-  --theme-ctrl-font-size: 130%;
+  --theme-ctrl-font-size: 105%;
   --theme-ctrl-box-size: 12px;
   --title-font-weight: 200;
 
@@ -106,7 +107,7 @@ strong {
    :root {
     --marg-top: 0.75em;
     --marg-left: 0.5em;
-    --theme-ctrl-font-size: 13px;
+    --theme-ctrl-font-size: 11px;
     --theme-ctrl-box-size: 10px;
     --title-font-weight: 400;
    }
@@ -276,12 +277,21 @@ div.menu_box {
   font-size: 0.75em;
 }
 
+.fa-globe {
+  font-weight: 600 !important;
+  display: inline-block;
+  line-height: 1.5;
+}
+
 div.option_box {
   position: fixed;
   right: var(--pad);
-  top: calc(var(--pad) - 1.25em );
+  top: calc(var(--pad) - 1.45em );
   font-size: var(--theme-ctrl-font-size);
   z-index: 2;
+  font-family: "Noto Sans JP", sans-serif;
+  display: flex;
+  column-gap: 1.5em;
 }
 
 div.n4v_box {
@@ -306,13 +316,37 @@ div.nav_box {
   z-index: 2;
 }
 
+
 .btn {
-  display: inline-block;
-  column-gap: 3px;
+  display: flex;
+  column-gap: 10px;
   font-weight: 400;
   text-transform: uppercase;
   cursor: pointer;
 }
+
+
+/* .btn_text.en {
+  background-color: black;
+  border-left: 1px solid var(--border-color);
+  padding-left: 2px;
+  padding-right: 1px;
+
+
+}
+
+.btn_text.jp {
+  background-color: white;
+  color: black;
+  border-right: 1px solid var(--border-color);
+  padding-right: 1px;
+
+} */
+
+.btn.lang {
+  column-gap: 5px;
+}
+
 
 .btn_box {
   width: calc(var(--theme-ctrl-box-size)*2);
