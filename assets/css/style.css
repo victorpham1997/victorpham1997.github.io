@@ -283,6 +283,7 @@ div.menu_box {
   line-height: 1.5;
 }
 
+
 div.option_box {
   position: fixed;
   right: var(--pad);
@@ -307,15 +308,23 @@ div.n4v_box {
 
 div.nav_box {
   position: fixed;
-  left: calc(var(--pad) - 1.25em );
+  left: calc(var(--pad) - 1.6em );
   top: var(--pad);
   font-size: var(--theme-ctrl-font-size);
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
   font-family: "Raleway", sans-serif;
   z-index: 2;
+  align-items: center;
+  cursor: pointer;
 }
 
+.nav_box-text{
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.nav_box-text.jp{
+  transform: rotate(0deg);
+}
 
 .btn {
   display: flex;
@@ -483,9 +492,6 @@ div.nav_box {
   font-family: "Hanken Grotesk", sans-serif;
   font-weight: 300;
   margin: auto;
-  overflow-wrap: break-word !important;
-  align-items: center;
-  justify-content: center;
 }
 
 
