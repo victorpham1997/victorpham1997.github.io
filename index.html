@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=language" />
         <!-- Bulma Version 0.8.x-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">        
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -42,12 +43,23 @@
                         </div>
                         <div class="option_box">
 
+                                <div class="btn lang" id="lang_btn">
+                                        <p class="btn_text lang"> EN </p>
+                                        <i class="fa fa-globe" aria-hidden="true"></i>
+                                </div>
+
                                 <div class="btn" id="theme_dark" >
                                         <div class="btn_text shadow">Dark</div>
                                         <div class="btn_box"></div>
                                         <div class="btn_text shadow">Light</div>
                                 </div>
 
+                        </div>
+
+                        <div class="nav_box no-display" >
+                                <a class="shadow-thick  nav_box-text" href="/" data-lang="home">
+                                </a>
+                                <i class="fa fa-angle-left "></i>
                         </div>
 
                         <div class="n4v_box" id="n4v_box">
@@ -69,30 +81,30 @@
                                         <div class="column is-one-third has-text-right menu_box">
                                                 
                                                 <div>
-                                                        <a class="menu_href" href="#about">
-                                                                <p class ="menu_text box"  id="about">About</p>
+                                                        <a class="menu_href " href="#about">
+                                                                <p class ="menu_text box"  id="about" data-lang="about"></p>
                                                         </a>
                                                 </div>
                                                 <div>
 
                                                         <a class="menu_href" href="#experience">
-                                                                <p class ="menu_text box "  id="experience">Experience</p>
+                                                                <p class ="menu_text box "  id="experience" data-lang="experience"></p>
                                                         </a>
                                                 </div>
                                                 <div>
 
                                                         <a class="menu_href" href="#contact">
-                                                                <p class ="menu_text box "  id="contact">Contact/Resume</p>
+                                                                <p class ="menu_text box "  id="contact" data-lang="contact"></p>
                                                         </a>
                                                 </div>
                                                 <div>
                                                         <a class="menu_href" href="#acad_proj">
-                                                                <p class ="menu_text box no-header"  id="acad_proj">Projects</p>
+                                                                <p class ="menu_text box no-header"  id="acad_proj" data-lang="projects" ></p>
                                                         </a>
                                                 </div>
                                                 <div class="z-bot">
                                                         <a class="menu_href" href="art">
-                                                                <p class ="menu_text box "  id="art">Art</p>
+                                                                <p class ="menu_text box "  id="art" data-lang="art"></p>
                                                         </a>
                                                 </div>
                                         </div>
@@ -100,10 +112,7 @@
                                 </div>
                                 <div class="columns ">
                                         <div class="column has-text-left content-box about-box  is-three-quarters-mobile background-blur " id="about-content">
-                                                <p class ="about-text" >
-                                                        Born in Vietnam, I moved to Singapore in 2015 to study under scholarships. Despite my dream of becoming an architect when I was young, 
-                                                        I developed interest in programming during my secondary school which led to my pursuit of a computer science degree in Singapore University of Technology and Design.
-                                                        I am now a Senior Data Engineer at Prudential but sometimes I still find time to do small sketches of things and people that I observe in my daily life.
+                                                <p class ="about-text" data-lang="about-text" >
                                                 </p>      
 
                                         </div>
@@ -112,7 +121,7 @@
 
                                                 <div class="timeline ">
                                                         <div></div>
-                                                        <div style="transform: translateX(-1.5em)" class="timeline-time">Present</div>
+                                                        <div style="transform: translateX(-1.5em)" class="timeline-time" data-lang="present"></div>
                                                         <div></div>
 
                                                         <div></div>
@@ -124,44 +133,44 @@
                                                         <p class ="experience-header has-text-left" >Prudential Service Singapore</p>
 
 
-                                                        <p class=" timeline-time">Apr 2023</p>
+                                                        <p class=" timeline-time" data-lang="apr-2023"></p>
                                                         <div class="timeline-middle">
                                                                 <div class="timeline-circle"></div>
                                                         </div>
-                                                        <p class ="experience-subheader has-text-left" >Senior Data Engineer</p>
+                                                        <p class ="experience-subheader has-text-left" data-lang="senior-data-engineer"></p>
 
 
-                                                        <p class=" timeline-time">Oct 2021</p>
+                                                        <p class=" timeline-time" data-lang="oct-2021"></p>
                                                         <div class="timeline-middle">
                                                                 <div class="timeline-circle"></div>
                                                         </div>
-                                                        <p class ="experience-subheader has-text-left" >Data Engineer</p>
+                                                        <p class ="experience-subheader has-text-left" data-lang="data-engineer"></p>
 
-                                                        <p class=" timeline-time">May 2020</p>
+                                                        <p class=" timeline-time" data-lang="may-2020"></p>
                                                         <div class="timeline-middle">
                                                                 <div class="timeline-circle"></div>
                                                         </div>
-                                                        <p class ="experience-subheader has-text-left" >Data Analytics Intern</p>
+                                                        <p class ="experience-subheader has-text-left" data-lang="data-analytics-intern" ></p>
 
                                                         <div></div>
                                                         <div></div>
                                                         <p class ="experience-header has-text-left" >LionsBot International</p>
 
-                                                        <p class=" timeline-time">May 2019</p>
+                                                        <p class=" timeline-time" data-lang="may-2019" ></p>
                                                         <div class="timeline-middle">
                                                                 <div class="timeline-circle"></div>
                                                         </div>
-                                                        <p class ="experience-subheader has-text-left" >Robotic Software Engineer Intern/ Part-time</p>
+                                                        <p class ="experience-subheader has-text-left" data-lang="robotic-swe"></p>
                                                         
                                                         <div></div>
                                                         <div></div>
                                                         <p class ="experience-header has-text-left" >Singapore University of Technology and Design</p>
 
-                                                        <p class=" timeline-time">May 2018</p>
+                                                        <p class=" timeline-time" data-lang="may-2018"></p>
                                                         <div class="timeline-middle">
                                                                 <div class="timeline-circle"></div>
                                                         </div>
-                                                        <p class ="experience-subheader has-text-left" >Computer Science</p>
+                                                        <p class ="experience-subheader has-text-left" data-lang="computer-science" >Computer Science</p>
 
                                                 </div>
 
@@ -172,57 +181,57 @@
                                                 <div class="columns projects-box is-multiline" href="bus_widget_ap">
                                                         <div class="column is-full "  >
                                                                 <a class="project-title shadow-thick" href="bus_widget_ap">Singapore Bus Timing Widget</a>
-                                                                <p class="project-subtitle shadow ">Aug.2024/fullstack/Android/Java</p>
-                                                                <p class="project-subtitle2 shadow">Handy Android bus arrival widget</p>
+                                                                <p class="project-subtitle shadow ">08.2024/fullstack/Android/Java</p>
+                                                                <p class="project-subtitle2 shadow" data-lang="bus_widget_ap-subtitle"></p>
                                                         </div>
 
                                                         <div class="column is-full "  >
                                                                 <a class="project-title shadow-thick" href="mugen_ap">Jazz Generation Project</a>
-                                                                <p class="project-subtitle shadow">Jan.2021/machine-learning/Python/Keras/React/GCP</p>
-                                                                <p class="project-subtitle2 shadow">Generating endless Jazz using GPT</p>
+                                                                <p class="project-subtitle shadow">01.2021/machine-learning/Python/Keras/React/GCP</p>
+                                                                <p class="project-subtitle2 shadow" data-lang="mugen_ap-subtitle"></p>
                                                         </div>
 
                                                         <div class="column is-full "  >
                                                                 <a class="project-title shadow-thick" href="spine_ap">Spine segmentation and analysis</a>
-                                                                <p class="project-subtitle shadow">Jun.2020/ml/Python/Keras/React/GCP</p>
-                                                                <p class="project-subtitle2 shadow">Deep learning pipeline for spine analysis</p>
+                                                                <p class="project-subtitle shadow">06.2020/ml/Python/Keras/React/GCP</p>
+                                                                <p class="project-subtitle2 shadow" data-lang="spine_ap-subtitle"></p>
                                                         </div>
 
                                                         <div class="column is-full "  >
                                                                 <a class="project-title shadow-thick" href="liberate_ap">liberate</a>
-                                                                <p class="project-subtitle shadow">Jan.2020/AWS/Python/NodeJS/SQL</p>
-                                                                <p class="project-subtitle2 shadow">Automated fullstack library Web App</p>
+                                                                <p class="project-subtitle shadow">01.2020/AWS/Python/NodeJS/SQL</p>
+                                                                <p class="project-subtitle2 shadow" data-lang="liberate_ap-subtitle"></p>
                                                         </div>
 
                                                         <div class="column is-full "  >
                                                                 <a class="project-title shadow-thick" href="snak3d_ap">SNAK3D</a>
-                                                                <p class="project-subtitle shadow">Dec.2019/EEE/3D-print/fpga</p>
-                                                                <p class="project-subtitle2 shadow">3D Snake Arcade Game Machine</p>
+                                                                <p class="project-subtitle shadow">12.2019/EEE/3D-print/fpga</p>
+                                                                <p class="project-subtitle2 shadow" data-lang="snak3d_ap-subtitle"></p>
                                                         </div>
 
                                                         <div class="column is-full "  >
                                                                 <a class="project-title shadow-thick" href="infectio_ap">Infectio</a>
-                                                                <p class="project-subtitle shadow">Nov.2019/Android/Unity3D/game</p>
-                                                                <p class="project-subtitle2 shadow">Top-down Gun and Run Game</p>
+                                                                <p class="project-subtitle shadow">11.2019/Android/Unity3D/game</p>
+                                                                <p class="project-subtitle2 shadow" data-lang="infectio_ap-subtitle"></p>
                                                         </div>
 
                                                         
                                                         <div class="column is-full "  >
                                                                 <a class="project-title shadow-thick" href="blink_ap">Blink</a>
-                                                                <p class="project-subtitle shadow">Aug.2019/Android/computer-vision/java</p>
-                                                                <p class="project-subtitle2 shadow">Networking Android App</p>
+                                                                <p class="project-subtitle shadow">08.2019/Android/computer-vision/java</p>
+                                                                <p class="project-subtitle2 shadow" data-lang="blink_ap-subtitle"></p>
                                                         </div>
                                                         
                                                         <div class="column is-full "  >
                                                                 <a class="project-title shadow-thick" href="urop_ap">Underwater Bio-inspired Mobile Robot</a>
-                                                                <p class="project-subtitle shadow">May.2019/EEE/3D-print/Ardruino</p>
-                                                                <p class="project-subtitle2 shadow">Stingray robot using soft material for underwater movement</p>
+                                                                <p class="project-subtitle shadow">06.2019/EEE/3D-print/Ardruino</p>
+                                                                <p class="project-subtitle2 shadow" data-lang="urop_ap-subtitle"></p>
                                                         </div>
                                                         
                                                         <div class="column is-full "  >
                                                                 <a class="project-title shadow-thick" href="astar_ap">Rehabilitation Game for the Physically Impared </a>
-                                                                <p class="project-subtitle shadow">Dec.2017/research/Unity3D/game</p>
-                                                                <p class="project-subtitle2 shadow">Interactive game to help patients rehabilitate</p>
+                                                                <p class="project-subtitle shadow">12.2017/research/Unity3D/game</p>
+                                                                <p class="project-subtitle2 shadow" data-lang="astar_ap-subtitle"></p>
                                                         </div>
 
                                                         

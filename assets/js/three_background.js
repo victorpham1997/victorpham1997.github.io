@@ -5,6 +5,8 @@ import Stats  from "https://cdn.skypack.dev/three@0.133.1/examples/jsm/libs/stat
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.133.1/examples/jsm/loaders/GLTFLoader.js';
 
 gsap.registerPlugin(TextPlugin) 
+var language = window.navigator.userLanguage || window.navigator.language;
+console.log(language);
 
 // Define page to theme mapping
 var themeMap = {
@@ -13,11 +15,24 @@ var themeMap = {
     'ap' : ['dark', [0, 35, 0]]
   };
 
+// Detect page language
+// TODO make function
+function getLang(){
+    var language = window.navigator.userLanguage || window.navigator.language;
+    console.log(language);
+    if (language.includes("en")){
+        return "en";
+    }else if(language.includes("ja")){
+        return "jp";
+    }
+    return "en";
+}
+
 // Read from localStorage to obtain theme if needed
 let currentUrl = window.location.href;
-// if
 
 let darkTheme = localStorage.getItem("dark_theme");
+
 if (darkTheme==null){
     darkTheme = true;
     localStorage.setItem("dark_theme", darkTheme);
@@ -25,8 +40,12 @@ if (darkTheme==null){
     darkTheme = darkTheme === 'true';
 }
 
+if (localStorage.getItem("lang")==null){
+    localStorage.setItem("lang", getLang());
+}
+
 //asign version
-const version = 'v2.0.7'
+const version = 'v2.0.9'
 var versionText = document.querySelector('.version');
 versionText.textContent  = version;
 
@@ -40,6 +59,7 @@ var root = document.querySelector(':root');
 var style = getComputedStyle(root);
 var content  = document.getElementById('projects-content');
 let btnCount = 5;
+
 
 // screen properties
 const w = window.innerWidth;
@@ -96,6 +116,35 @@ renderer.setSize(w, h);
 const effect = new AsciiEffect( renderer, ascii_set2, { invert: true, resolution: ascii_resolution } );
 effect.setSize( w, h );
 
+async function fetchLanguageData(lang) {
+    const response = await fetch(`../../lang/${lang}.json`);
+    return response.json();
+}
+
+async function applyLang(lang){
+    const lang_animation_dur = 0.35;
+    if (lang == "en"){
+        gsap.to('.btn_text.lang', {duration: 0.2, text: "EN"});
+        document.querySelector(".nav_box-text").classList.remove('jp');
+
+    }else if (lang == "jp"){
+        document.querySelector(".nav_box-text").classList.add('jp');
+        gsap.to('.btn_text.lang', {duration: 0.2, text: "日本語"});
+    }
+
+    const langData = await fetchLanguageData(lang);
+    document.querySelectorAll('[data-lang]').forEach(element => {
+        const key = element.getAttribute('data-lang');
+        var text1 = langData[key];
+        if(element.classList.contains('menu_text') && element.classList.contains('is-active')){
+            text1 += ' <';
+        }
+        gsap.to(element, {duration: lang_animation_dur, text: text1});
+
+        // element.innerHTML = langData[key];
+    });
+}
+
 function applyThemeMap (identifyString){
     // currentUrl = window.location.href;
     console.log(identifyString);
@@ -117,6 +166,7 @@ function applyThemeMap (identifyString){
 }   
 
 function initTheme(darkTheme){
+    applyLang(localStorage.getItem("lang"));
     if( !applyThemeMap(window.location.href)){
         if(darkTheme){
             theme = 'dark'
@@ -326,48 +376,14 @@ function controlHeaderVis(tab){
 };
 
 
-// function projectsOverflowIndicator(){
-//     if (content.scrollHeight > content.offsetHeight) {
-//         console.log('element overflows');
-//         overflowIndicator.style.visibility = 'visible';
-//     }else{
-//         overflowIndicator.style.visibility = 'hidden';
-//     }
-
-// }
-
-// if(document.getElementById('projects-content')){
-//     document.getElementById('projects-content').addEventListener('scroll', event => {
-//         const {scrollHeight, scrollTop, clientHeight} = event.target;
-    
-//         if (Math.abs(scrollHeight - clientHeight - scrollTop) < 1) {
-//             console.log('scrolled');
-//             overflowIndicator.style.visibility = 'hidden';
-    
-    
-    
-//         }else{
-//             console.log('unscrolled');
-//             overflowIndicator.style.visibility = 'visible';
-    
-//         }
-//     });
-// }
-
-// if ( document.getElementById('projects-content') ) {
-//     console.log(element.scrollHeight);
-//     console.log(element.clientHeight);
-//     console.log(element.offsetHeight);
-// }
-
 
 // Define html/css interacting functions
 
 // mouseenter tab
 function onHoverTab(tab){
-    const text0 = tab.textContent.split(' ')[0];
 
     tab.addEventListener('mouseenter', () => {
+    var text0 = tab.innerHTML.split(' ')[0];
     gsap.to(`#${tab.id}`, {duration: text_animation_duration, text: text0 + " #"});
     gsap.to(`#${tab.id}`, {duration: text_animation_duration, text: text0 + " _-", delay: text_animation_duration});
     gsap.to(`#${tab.id}`, {duration: text_animation_duration, text: text0 + " <<", delay: text_animation_duration*2});
@@ -375,6 +391,7 @@ function onHoverTab(tab){
 
     // Mouse leave event
     tab.addEventListener('mouseleave', () => {
+        var text0 = tab.innerHTML.split(' ')[0];
         gsap.to(`#${tab.id}`, {duration: 0.25, text: text0 });
     });
 }
@@ -414,7 +431,10 @@ function toggleTab(selectedTab) {
 // Tab
 var tabs = document.querySelectorAll(".menu_text");
 const text_animation_duration = 0.07
-const active_id = location.hash.replace("#", "");
+var active_id = location.hash.replace("#", "");
+if (active_id == ""){
+    active_id = "about";
+}
 // if (active_id=='acad_proj'){
 //     active_id = 'projects';
 // }
@@ -438,13 +458,10 @@ if(active_id) {
 tabs.forEach(function(tab) {
     // Mouse onclick event
     tab.onclick = function(){toggleTab(tab.id, tabs)};
-
     if (!tab.classList.contains("is-active")) {
         onHoverTab(tab);
-
-
     }else{
-        tab.textContent += ' <';
+        tab.innerHTML += ' <';
     }
 });
 
@@ -456,7 +473,17 @@ function switchTheme() {
   
 };
 
+function switchLang() {
+    if (localStorage.getItem("lang") =="en"){
+        localStorage.setItem("lang", "jp");
+    }else{
+        localStorage.setItem("lang", "en");
+    }
+    applyLang(localStorage.getItem("lang"));
+};
+
 document.getElementById("theme_dark").onclick = switchTheme;
+document.getElementById("lang_btn").onclick = switchLang;
 // switchTheme();
 
 // Define animation
