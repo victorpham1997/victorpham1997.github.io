@@ -1,0 +1,43 @@
+{
+    "about": "について",
+    "experience": "職務経験",
+    "contact": "連絡先/履歴書",
+    "projects": "プロジェクト",
+    "art": "美術",
+
+    "about-text" : "ベトナムで生まれ、奨学金を得て2015 年にシンガポールに移住しました。子供のとき、建築家になるのが夢でしたが、中学の頃にプログラミングに興味を持っていました。そして、Singapore University of Technology and Designで計算機科学の学位を取得しました。現在はPrudential Singaporeでシニア データ エンジニアとして働いていますが、日常生活で観察した物や人物の小さなスケッチを描く時間も探します。",
+
+    "present": "",
+    "apr-2023": "2023年4月",
+    "senior-data-engineer": "シニア データ エンジニア",
+    "oct-2021": "2021年10月",
+    "data-engineer": "データ エンジニア",
+    "may-2020": "2020年5月",
+    "data-analytics-intern": "データアナリストインターン",
+    "may-2019": "2019年5月",
+    "robotic-swe": "ロボット開発者 インターン/アルバイト",
+    "may-2018": "2018年5月",
+    "computer-science": "計算機科学",
+
+    "bus_widget_ap-subtitle": "便利なAndroidバス到着ウィジェット",
+    "mugen_ap-subtitle": "GPTを使用してエンドレスジャズを生成",
+    "spine_ap-subtitle": "脊椎分析用のディープラーニング パイプライン",
+    "liberate_ap-subtitle": "自動化されたフルスタック ライブラリ Web アプリ",
+    "snak3d_ap-subtitle": "3Dへび アーケード ゲーム機",
+    "infectio_ap-subtitle": "トップダウンのガン アンド ラン ゲーム",
+    "blink_ap-subtitle": "ネットワーキング Android アプリ",
+    "urop_ap-subtitle": "水中移動に柔らかい素材を使用するスティングレイ ロボット",
+    "astar_ap-subtitle": "患者のリハビリを支援するインタラクティブ ゲーム",
+
+    "art-title": "美術",
+    "all": "すべて",
+    "architecture": "建築",
+    "field": "フィールドスケッチ",
+    "human": "人間のスケッチ",
+    "others": "その他",
+
+    "home": "ホーム",
+
+
+    "end": "end"
+}

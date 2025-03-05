@@ -1,0 +1,44 @@
+{
+    "about": "About",
+    "experience": "Experience",
+    "contact": "Contact/Resume",
+    "projects": "Projects",
+    "art": "Art",
+
+    "about-text" : "Born in Vietnam, I moved to Singapore in 2015 to study under scholarships. Despite my dream of becoming an architect when I was young, I developed interest in programming during my secondary school which led to my pursuit of a computer science degree in Singapore University of Technology and Design. I am now a Senior Data Engineer at Prudential but sometimes I still find time to do small sketches of things and people that I observe in my daily life.",
+    
+    "present": "Present",
+    "apr-2023": "Apr 2023",
+    "senior-data-engineer": "Senior Data Engineer",
+    "oct-2021": "Oct 2021",
+    "data-engineer": "Data Engineer",
+    "may-2020": "May 2020",
+    "data-analytics-intern": "Data Analytics Intern",
+    "may-2019": "May 2019",
+    "robotic-swe": "Robotic Software Engineer Intern/ Part-time",
+    "may-2018": "May 2018",
+    "computer-science": "Computer Science",
+
+    "bus_widget_ap-subtitle": "Handy Android bus arrival widget",
+    "mugen_ap-subtitle": "Generating endless Jazz using GPT",
+    "spine_ap-subtitle": "Deep learning pipeline for spine analysis",
+    "liberate_ap-subtitle": "Automated fullstack library Web App",
+    "snak3d_ap-subtitle": "3D Snake Arcade Game Machine",
+    "infectio_ap-subtitle": "Top-down Gun and Run Game",
+    "blink_ap-subtitle": "Networking Android App",
+    "urop_ap-subtitle": "Stingray robot using soft material for underwater movement",
+    "astar_ap-subtitle": "Interactive game to help patients rehabilitate",
+
+    "art-title": "ART",
+    "all": "All",
+    "architecture": "Architecture Sketches",
+    "field": "Field Sketches",
+    "human": "Human Sketches",
+    "others": "Others",
+    
+    "home": "HOME",
+
+
+
+    "end": "end"
+}
