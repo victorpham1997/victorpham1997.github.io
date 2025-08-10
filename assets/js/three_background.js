@@ -1,8 +1,8 @@
 import * as THREE from "https://cdn.skypack.dev/three@0.133.1";
 import { ImprovedNoise } from "https://cdn.skypack.dev/three@0.133.1/examples/jsm/math/ImprovedNoise.js";
 import { AsciiEffect } from "https://cdn.skypack.dev/three@0.133.1/examples/jsm/effects/AsciiEffect.js";
-import Stats  from "https://cdn.skypack.dev/three@0.133.1/examples/jsm/libs/stats.module.js";
-import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.133.1/examples/jsm/loaders/GLTFLoader.js';
+// import Stats  from "https://cdn.skypack.dev/three@0.133.1/examples/jsm/libs/stats.module.js";
+// import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.133.1/examples/jsm/loaders/GLTFLoader.js';
 
 gsap.registerPlugin(TextPlugin) 
 var language = window.navigator.userLanguage || window.navigator.language;
@@ -45,7 +45,7 @@ if (localStorage.getItem("lang")==null){
 }
 
 //asign version
-const version = 'v2.0.9'
+const version = 'v2.0.11'
 var versionText = document.querySelector('.version');
 versionText.textContent  = version;
 
