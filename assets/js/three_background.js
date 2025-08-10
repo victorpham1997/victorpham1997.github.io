@@ -45,7 +45,7 @@ if (localStorage.getItem("lang")==null){
 }
 
 //asign version
-const version = 'v2.0.10'
+const version = 'v2.0.11'
 var versionText = document.querySelector('.version');
 versionText.textContent  = version;
 
