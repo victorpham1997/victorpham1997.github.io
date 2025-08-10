@@ -5,9 +5,12 @@
     "projects": "Projects",
     "art": "Art",
 
-    "about-text" : "Born in Vietnam, I moved to Singapore in 2015 to study under scholarships. Despite my dream of becoming an architect when I was young, I developed interest in programming during my secondary school which led to my pursuit of a computer science degree in Singapore University of Technology and Design. I am now a Senior Data Engineer at Prudential but sometimes I still find time to do small sketches of things and people that I observe in my daily life.",
+    "about-text" : "Born in Vietnam, I moved to Singapore in 2015 to study under scholarships. Despite my dream of becoming an architect when I was young, I developed interest in programming during my secondary school which led to my pursuit of a computer science degree in Singapore University of Technology and Design. I am now a Backend Developer at Woven By Toyota in Tokyo but sometimes I still find time to do small sketches of things and people that I observe in my daily life.",
     
     "present": "Present",
+    "wbyt": "Woven By Toyota",
+    "aug-2025": "Aug 2025",
+    "backend-engineer": "Backend Engineer",
     "apr-2023": "Apr 2023",
     "senior-data-engineer": "Senior Data Engineer",
     "oct-2021": "Oct 2021",
